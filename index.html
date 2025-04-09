@@ -20,6 +20,9 @@
     <!-- <div class="absolute top-0 left-0 w-full h-[80%] bg-gradient-to-r from-blue-400 via-blue-600 to-blue-900"></div> -->
     <div class="relative z-10">
 
+
+        <!-- Navbar -->
+
         <header class="mb-20">
             <nav class="fixed w-full z-20 top-0 start-0 bg-white shadow-sm border-b border-gray-300">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-6">
@@ -92,23 +95,38 @@
                 </script>
             </nav>
         </header>
-        <!-- <div class="w-1/2 px-4 md:px-10 py-4 box-border">
-            <img src="./assets/img/poster.jpg" alt="Bootcamp"
-              class="w-full h-full object-cover rounded-xl shadow-md" />
-          </div> -->
 
 
-        <section class="text-center pt-12 px-4 bg-blue-400 py-12">
+        <!-- Beli Webiner -->
+        <!-- bg-blue-400 -->
+        <section class="text-center pt-12 px-4  py-12">
             <div
                 class="max-w-5xl mx-auto p-6 md:p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 shadow-xl bg-white">
+                <!-- Image Carousel -->
+                <div class="w-full md:w-1/2 relative overflow-hidden rounded-2xl shadow-md">
+                    <!-- Carousel Container -->
+                    <div class="carousel-container">
+                        <div class="carousel-slider">
+                            <img src="./assets/img/poster.jpg" alt="Bootcamp Image 1" class="carousel-image" />
+                            <img src="./assets/img/poster.jpg" alt="Bootcamp Image 2" class="carousel-image" />
+                            <!-- <img src="./assets/img/poster.jpg" alt="Bootcamp Image 3" class="carousel-image" /> -->
+                        </div>
 
-                <!-- Image -->
-                <img src="./assets/img/poster.jpg" alt="Bootcamp"
-                    class="w-full md:w-1/2 rounded-2xl shadow-md transform hover:scale-105 hover:rotate-1 transition-transform duration-300 ease-in-out" />
+                        <!-- Navigation Dots -->
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
 
                 <!-- Content -->
                 <div class="text-left md:flex-1 space-y-4">
-
                     <!-- Tag -->
                     <span
                         class="text-sm text-white bg-blue-700 bg-opacity-90 px-4 py-1 rounded-full font-medium inline-block w-fit shadow">
@@ -118,8 +136,11 @@
                     <!-- Jadwal dan Button -->
                     <div class="flex justify-between items-center flex-wrap">
                         <div>
-                            <h2 class="text-lg font-bold text-gray-800 max-w-sm">Webinar 1: Teknik dan Strategi Bertanya
-                                dalam Deep Learning</h2>
+
+                            <h2 class="text-lg font-bold text-gray-800 max-w-sm">
+                                Webinar 1: Teknik dan Strategi Bertanya dalam Deep Learning
+                            </h2>
+
                             <p class="text-gray-600 text-sm mb-2">29 - 30 April 2025</p>
                         </div>
                         <a href="#timeline"
@@ -138,12 +159,6 @@
                     </p>
 
                     <!-- CTA Button -->
-                    <!-- <a
-              href="https://lynk.id/hafecs/k9pg5o7xg606"
-              class="block w-full md:w-fit mt-4 bg-yellow-500 hover:bg-yellow-600 transition text-white px-6 py-3 rounded-xl shadow-md text-center text-base font-semibold"
-            >
-              🚀 Beli Kelas Sekarang
-            </a> -->
                     <a href="https://lynk.id/hafecs/k9pg5o7xg606" target="_blank" class="inline-block">
                         <div
                             class="relative group border-none bg-transparent p-0 outline-none cursor-pointer font-mono font-light uppercase text-base">
@@ -168,7 +183,107 @@
                     </a>
                 </div>
             </div>
-        </section>
+
+
+            <!-- CSS Styles for Carousel -->
+            <style>
+                @keyframes bounceUpDown {
+
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-6px);
+                    }
+                }
+
+                .auto-bounce {
+                    animation: bounceUpDown 2s infinite ease-in-out;
+                }
+
+                .carousel-container {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .carousel-slider {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                    width: 100%;
+                }
+
+                .carousel-image {
+                    width: 100%;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                    aspect-ratio: 4/3;
+                    transform: scale(1);
+                    transition: transform 0.3s;
+                }
+
+                .carousel-image:hover {
+                    transform: scale(1.05) rotate(1deg);
+                }
+
+                .carousel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.3);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0.7;
+                    transition: opacity 0.3s, background-color 0.3s;
+                }
+
+                .carousel-btn:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                .prev {
+                    left: 10px;
+                }
+
+                .next {
+                    right: 10px;
+                }
+
+                .carousel-dots {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    gap: 8px;
+                }
+
+                .dot {
+                    height: 10px;
+                    width: 10px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+
+                .dot.active,
+                .dot:hover {
+                    background-color: white;
+                }
+            </style>
 
         <section
             class="lg:hidden bg-white text-blue-600 p-6 flex flex-col md:flex-row justify-between items-start md:items-center max-w-4xl mx-auto mt-6 rounded-lg shadow-md space-y-4 md:space-y-0 md:space-x-6">
@@ -210,6 +325,52 @@
         </style>
 
 
+
+            <!-- JavaScript for Carousel Functionality -->
+            <script>
+                let currentSlideIndex = 1;
+                showSlide(currentSlideIndex);
+
+                // Auto-slide every 5 seconds
+                setInterval(() => {
+                    changeSlide(1);
+                }, 4000);
+
+                function changeSlide(n) {
+                    showSlide(currentSlideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlide(currentSlideIndex = n);
+                }
+
+                function showSlide(n) {
+                    const slides = document.querySelector('.carousel-slider');
+                    const dots = document.querySelectorAll('.dot');
+                    const totalSlides = dots.length;
+
+                    // Handle wrapping
+                    if (n > totalSlides) {
+                        currentSlideIndex = 1;
+                    }
+                    if (n < 1) {
+                        currentSlideIndex = totalSlides;
+                    }
+
+                    // Move slider to show current slide
+                    slides.style.transform = `translateX(-${(currentSlideIndex - 1) * 100}%)`;
+
+                    // Update active dot
+                    dots.forEach((dot, index) => {
+                        dot.classList.remove('active');
+                        if (index === currentSlideIndex - 1) {
+                            dot.classList.add('active');
+                        }
+                    });
+                }
+            </script>
+        </section>
+        <!-- End Beli Webiner -->
 
         <!-- MENTOR -->
         <section class="py-10 mt-4" id="mentor">
@@ -333,8 +494,10 @@
                 </div>
             </section>
         </section>
+        <!-- End Mentor -->
 
 
+        <!-- Timeline -->
 
         <section class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900"
             id="timeline">
@@ -779,8 +942,9 @@
                 });
             </script>
         </section>
+        <!-- End Timeline -->
 
-
+        <!-- Sertifikat -->
         <section class="py-8">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -834,7 +998,9 @@
                 </div>
             </div>
         </section>
+        <!-- End Sertifikat -->
 
+        <!-- Fasilitas -->
         <section class="py-10 px-5 bg-white mt-10">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -890,7 +1056,9 @@
             </div>
             <p class="text-xs text-blue-500 mt-4 text-center">*Syarat dan Ketentuan Berlaku</p>
         </section>
+        <!-- End Fasilitas -->
 
+        <!-- Review Alumni -->
         <section class="w-full px-5 py-16 text-gray-900" id="testimonials">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -970,6 +1138,7 @@
                 </div>
             </div>
         </section>
+        <!-- End Review Alumni -->
 
 
         <!-- <section>
@@ -1272,8 +1441,9 @@
                 <div>
                     <h2 class="text-lg font-semibold">Kontak</h2>
                     <ul class="mt-2 space-y-2 text-sm">
-                        <li><i class="fas fa-map-marker-alt text-yellow-400"></i>JL. Brigjend. H. Hasan Basri KM 11,
-                            Ray
+                        <li><i class="fas fa-map-marker-alt text-yellow-400"></i>JL. Brigjend. H. Hasan Basri KM 11, Ray
+
+
                             5, Kel. Handil Bakti, Kec. Alalak, Kab. Barito Kuala, Prov. Kalimantan Selatan</li>
                         <!-- <li><i class="fas fa-phone-alt text-yellow-400"></i> +62 21 1234 5678</li> -->
                         <li><i class="fas fa-envelope text-yellow-400"></i> info@webinarprogram.id</li>
