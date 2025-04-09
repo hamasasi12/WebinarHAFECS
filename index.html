@@ -13,13 +13,14 @@
 </head>
 
 <body class="bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 min-h-screen">
-    
-    
+
+
     <div class="relative"></div>
-    
+
     <!-- <div class="absolute top-0 left-0 w-full h-[80%] bg-gradient-to-r from-blue-400 via-blue-600 to-blue-900"></div> -->
     <div class="relative z-10">
-        
+
+        <!-- Navbar -->
         <header class="mb-20">
             <nav class="fixed w-full z-20 top-0 start-0 bg-white shadow-sm border-b border-gray-300">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-6">
@@ -31,35 +32,38 @@
                             <!-- <span class="text-sm text-[#f1e686] font-medium">Teaching & Learning Certification</span> -->
                         </div>
                     </a>
-        
+
                     <!-- Hamburger Menu Button -->
                     <button id="menu-toggle" class="lg:hidden text-black focus:outline-none">
                         <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
-        
+
                     <!-- Navigation menu -->
                     <div class="hidden lg:flex lg:items-center lg:space-x-16 text-sm font-semibold" id="menu">
                         <a href="https://hafecs.id/" class="text-black hover:text-blue-600 transition duration-300"
                             target="_blank">Website HAFECS</a>
-                        <a href="https://elevate.hafecs.id/" class="text-black hover:text-blue-600 transition duration-300"
-                            target="_blank">Elevate</a>
+                        <a href="https://elevate.hafecs.id/"
+                            class="text-black hover:text-blue-600 transition duration-300" target="_blank">Elevate</a>
                         <a href="#mentor" class="text-black hover:text-blue-600 transition duration-300">Mentor</a>
                         <a href="#timeline" class="text-black hover:text-blue-600 transition duration-300">Timeline</a>
                     </div>
-        
+
                     <!-- Promo Code - Now positioned at the far right -->
                     <div class="hidden lg:flex lg:items-center lg:ml-auto">
-                        <div class="flex items-center space-x-2 bg-yellow-100 p-3 rounded-lg shadow-md border border-yellow-300">
+                        <div
+                            class="flex items-center space-x-2 bg-yellow-100 p-3 rounded-lg shadow-md border border-yellow-300">
                             <span id="promo-code"
                                 class="cursor-pointer text-sm font-semibold bg-yellow-300 text-gray-800 px-3 py-1 rounded-md shadow-md hover:bg-yellow-400 transition"
-                                onclick="copyPromoCode()">🎁 Promo Code untuk 20 orang Pertama: <strong>EARLYBIRD49%</strong></span>
+                                onclick="copyPromoCode()">🎁 Promo Code untuk 20 orang Pertama:
+                                <strong>EARLYBIRD49%</strong></span>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Mobile Menu -->
                 <div id="mobile-menu"
                     class="hidden lg:hidden flex flex-col items-center space-y-4 py-6 bg-[#3A6EA5] border-t border-gray-300 text-sm font-medium">
@@ -70,14 +74,14 @@
                     <a href="#mentor" class="text-white hover:text-[#F4A261] transition duration-300">Mentor</a>
                     <a href="#timeline" class="text-white hover:text-[#F4A261] transition duration-300">Timeline</a>
                 </div>
-        
+
                 <script>
-                    document.addEventListener("DOMContentLoaded", function() {
-                        document.getElementById('menu-toggle').addEventListener('click', function() {
+                    document.addEventListener("DOMContentLoaded", function () {
+                        document.getElementById('menu-toggle').addEventListener('click', function () {
                             document.getElementById('mobile-menu').classList.toggle('hidden');
                         });
                     });
-        
+
                     function copyPromoCode() {
                         const promo = "EARLYBIRD49%";
                         navigator.clipboard.writeText(promo).then(function () {
@@ -89,23 +93,38 @@
                 </script>
             </nav>
         </header>
-        <!-- <div class="w-1/2 px-4 md:px-10 py-4 box-border">
-            <img src="./assets/img/poster.jpg" alt="Bootcamp"
-              class="w-full h-full object-cover rounded-xl shadow-md" />
-          </div> -->
-          
+        <!-- End Navbar -->
 
-        <section class="text-center pt-12 px-4 bg-blue-400 py-12">
+        <!-- Beli Webiner -->
+        <!-- bg-blue-400 -->
+        <section class="text-center pt-12 px-4  py-12">
             <div
                 class="max-w-5xl mx-auto p-6 md:p-10 rounded-3xl flex flex-col md:flex-row items-center gap-8 shadow-xl bg-white">
+                <!-- Image Carousel -->
+                <div class="w-full md:w-1/2 relative overflow-hidden rounded-2xl shadow-md">
+                    <!-- Carousel Container -->
+                    <div class="carousel-container">
+                        <div class="carousel-slider">
+                            <img src="./assets/img/poster.jpg" alt="Bootcamp Image 1" class="carousel-image" />
+                            <img src="./assets/img/poster.jpg" alt="Bootcamp Image 2" class="carousel-image" />
+                            <!-- <img src="./assets/img/poster.jpg" alt="Bootcamp Image 3" class="carousel-image" /> -->
+                        </div>
 
-                <!-- Image -->
-                <img src="./assets/img/poster.jpg" alt="Bootcamp"
-                    class="w-full md:w-1/2 rounded-2xl shadow-md transform hover:scale-105 hover:rotate-1 transition-transform duration-300 ease-in-out" />
+                        <!-- Navigation Dots -->
+                        <div class="carousel-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
+                        </div>
+
+                        <!-- Navigation Arrows -->
+                        <button class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="carousel-btn next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
 
                 <!-- Content -->
                 <div class="text-left md:flex-1 space-y-4">
-
                     <!-- Tag -->
                     <span
                         class="text-sm text-white bg-blue-700 bg-opacity-90 px-4 py-1 rounded-full font-medium inline-block w-fit shadow">
@@ -115,10 +134,13 @@
                     <!-- Jadwal dan Button -->
                     <div class="flex justify-between items-center flex-wrap">
                         <div>
-                            <h2 class="text-lg font-bold text-gray-800 max-w-sm">Webinar 1: Teknik dan Strategi Bertanya dalam Deep Learning</h2>
+                            <h2 class="text-lg font-bold text-gray-800 max-w-sm">
+                                Webinar 1: Teknik dan Strategi Bertanya dalam Deep Learning
+                            </h2>
                             <p class="text-gray-600 text-sm mb-2">29 - 30 April 2025</p>
                         </div>
-                        <a href="#timeline" class="mt-2 md:mt-0 py-2 px-4 bg-blue-500 text-white hover:bg-blue-600 rounded-md text-sm transition inline-block">
+                        <a href="#timeline"
+                            class="mt-2 md:mt-0 py-2 px-4 bg-blue-500 text-white hover:bg-blue-600 rounded-md text-sm transition inline-block">
                             🔁 Webinar Lainnya
                         </a>
                     </div>
@@ -133,12 +155,6 @@
                     </p>
 
                     <!-- CTA Button -->
-                    <!-- <a
-              href="https://lynk.id/hafecs/k9pg5o7xg606"
-              class="block w-full md:w-fit mt-4 bg-yellow-500 hover:bg-yellow-600 transition text-white px-6 py-3 rounded-xl shadow-md text-center text-base font-semibold"
-            >
-              🚀 Beli Kelas Sekarang
-            </a> -->
                     <a href="https://lynk.id/hafecs/k9pg5o7xg606" target="_blank" class="inline-block">
                         <div
                             class="relative group border-none bg-transparent p-0 outline-none cursor-pointer font-mono font-light uppercase text-base">
@@ -149,7 +165,7 @@
                                 class="absolute top-0 left-0 w-full h-full rounded-lg bg-gradient-to-l from-[hsl(217,33%,16%)] via-[hsl(217,33%,32%)] to-[hsl(217,33%,16%)]"></span>
 
                             <div
-                            class="relative flex items-center justify-between py-3 px-6 text-lg text-white rounded-lg transform -translate-y-1 bg-yellow-500 gap-3 transition duration-[600ms] ease-[cubic-bezier(0.3,0.7,0.4,1)] group-hover:-translate-y-1.5 group-hover:duration-[250ms] group-active:-translate-y-0.5 brightness-100 group-hover:brightness-110 auto-bounce">
+                                class="relative flex items-center justify-between py-3 px-6 text-lg text-white rounded-lg transform -translate-y-1 bg-yellow-500 gap-3 transition duration-[600ms] ease-[cubic-bezier(0.3,0.7,0.4,1)] group-hover:-translate-y-1.5 group-hover:duration-[250ms] group-active:-translate-y-0.5 brightness-100 group-hover:brightness-110 auto-bounce">
                                 <span class="select-none">🚀 Beli Webinar Sekarang!</span>
 
                                 <svg viewBox="0 0 20 20" fill="currentColor"
@@ -163,40 +179,152 @@
                     </a>
                 </div>
             </div>
-        </section>
 
-        <section class="lg:hidden bg-white text-blue-600 p-6 flex flex-col md:flex-row justify-between items-start md:items-center max-w-4xl mx-auto mt-6 rounded-lg shadow-md space-y-4 md:space-y-0 md:space-x-6">
-            <div>
-              <span class="bg-blue-600 text-white px-4 py-2 font-bold rounded">GET DISCOUNT 49% OFF</span>
-              <p class="text-sm text-gray-600 mt-2">Hanya untuk 20 orang pertama, kuota terbatas!</p>
-            </div>
-            <div class="flex flex-col md:flex-row md:items-center md:space-x-4 w-full md:w-auto">
-              <p class="text-base font-bold mb-2 md:mb-0">
-                Use this code:
-                <button id="copyCode" class="text-black underline hover:text-blue-800 transition" title="Klik untuk salin">EARLYBIRD49%</button>
-              </p>
-              <button onclick="copyPromoCode()" class="bg-yellow-500 hover:bg-yellow-400 text-black px-4 py-2 rounded-lg transition">KLAIM PROMO</button>
-            </div>
-          </section>
-          
-          
-        
+            <!-- CSS Styles for Carousel -->
+            <style>
+                @keyframes bounceUpDown {
 
-        <style>
-            @keyframes bounceUpDown {
-              0%, 100% {
-                transform: translateY(0);
-              }
-              50% {
-                transform: translateY(-6px);
-              }
-            }
-            .auto-bounce {
-              animation: bounceUpDown 2s infinite ease-in-out;
-            }
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+
+                    50% {
+                        transform: translateY(-6px);
+                    }
+                }
+
+                .auto-bounce {
+                    animation: bounceUpDown 2s infinite ease-in-out;
+                }
+
+                .carousel-container {
+                    position: relative;
+                    width: 100%;
+                }
+
+                .carousel-slider {
+                    display: flex;
+                    transition: transform 0.5s ease;
+                    width: 100%;
+                }
+
+                .carousel-image {
+                    width: 100%;
+                    flex-shrink: 0;
+                    object-fit: cover;
+                    aspect-ratio: 4/3;
+                    transform: scale(1);
+                    transition: transform 0.3s;
+                }
+
+                .carousel-image:hover {
+                    transform: scale(1.05) rotate(1deg);
+                }
+
+                .carousel-btn {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.3);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 50%;
+                    font-size: 18px;
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    opacity: 0.7;
+                    transition: opacity 0.3s, background-color 0.3s;
+                }
+
+                .carousel-btn:hover {
+                    opacity: 1;
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                .prev {
+                    left: 10px;
+                }
+
+                .next {
+                    right: 10px;
+                }
+
+                .carousel-dots {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    gap: 8px;
+                }
+
+                .dot {
+                    height: 10px;
+                    width: 10px;
+                    background-color: rgba(255, 255, 255, 0.5);
+                    border-radius: 50%;
+                    display: inline-block;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+                }
+
+                .dot.active,
+                .dot:hover {
+                    background-color: white;
+                }
             </style>
-            
 
+            <!-- JavaScript for Carousel Functionality -->
+            <script>
+                let currentSlideIndex = 1;
+                showSlide(currentSlideIndex);
+
+                // Auto-slide every 5 seconds
+                setInterval(() => {
+                    changeSlide(1);
+                }, 4000);
+
+                function changeSlide(n) {
+                    showSlide(currentSlideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlide(currentSlideIndex = n);
+                }
+
+                function showSlide(n) {
+                    const slides = document.querySelector('.carousel-slider');
+                    const dots = document.querySelectorAll('.dot');
+                    const totalSlides = dots.length;
+
+                    // Handle wrapping
+                    if (n > totalSlides) {
+                        currentSlideIndex = 1;
+                    }
+                    if (n < 1) {
+                        currentSlideIndex = totalSlides;
+                    }
+
+                    // Move slider to show current slide
+                    slides.style.transform = `translateX(-${(currentSlideIndex - 1) * 100}%)`;
+
+                    // Update active dot
+                    dots.forEach((dot, index) => {
+                        dot.classList.remove('active');
+                        if (index === currentSlideIndex - 1) {
+                            dot.classList.add('active');
+                        }
+                    });
+                }
+            </script>
+        </section>
+        <!-- End Beli Webiner -->
 
         <!-- MENTOR -->
         <section class="py-10 mt-4" id="mentor">
@@ -277,8 +405,8 @@
                         class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95">
                         <span
                             class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                        <img src="./assets/img/ubaid.jpg" alt="Ubaidillah"
-                            class="w-full h-60 object-cover rounded-md" loading="lazy">
+                        <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md"
+                            loading="lazy">
                         <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
                         <p class="text-yellow-600 text-sm">Kepala Departemen Pengembangan Kurikulum dan Konten</p>
                         <p class="text-gray-600 text-sm mt-2 text-justify">
@@ -320,10 +448,12 @@
                 </div>
             </section>
         </section>
+        <!-- End Mentor -->
 
 
-
-        <section class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900" id="timeline">
+        <!-- Timeline -->
+        <section class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900"
+            id="timeline">
             <!-- Header -->
             <!-- <div class="text-center mb-12">
           <h2 class="text-3xl sm:text-4xl font-extrabold bg-gradient-to-r from-blue-700 via-sky-600 to-blue-500 bg-clip-text text-transparent">
@@ -400,8 +530,7 @@
                                     dialog</li>
                             </ul>
                             <div class="text-right">
-                                <a href="https://lynk.id/hafecs/k9pg5o7xg606"
-                                    target="_blank"
+                                <a href="https://lynk.id/hafecs/k9pg5o7xg606" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -447,8 +576,7 @@
                                     hingga SMA</li>
                             </ul>
                             <div class="text-right">
-                                <a href="http://lynk.id/hafecs/j528j41vvdlx"
-                                    target="_blank"
+                                <a href="http://lynk.id/hafecs/j528j41vvdlx" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -456,7 +584,7 @@
                     </div>
 
 
-                   
+
 
                     <!-- WEBINAR 3 -->
                     <div
@@ -497,60 +625,58 @@
                                     pembahasan solusi intervensinya</li>
                             </ul>
                             <div class="text-right">
-                                <a href="http://lynk.id/hafecs/qrjw0l5nvyog"
-                                    target="_blank"
+                                <a href="http://lynk.id/hafecs/qrjw0l5nvyog" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
                         </div>
                     </div>
 
-                     <!-- WEBINAR 4 -->
-                     <div
-                     class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
+                    <!-- WEBINAR 4 -->
+                    <div
+                        class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
 
-                     <!-- Baris atas: judul + tanggal -->
-                     <div class="flex justify-between items-start">
-                         <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                             Webinar 4 : Strategi Pemilihan Reinforcement & Pembuatan Prioritas Intervensi Perilaku
-                         </h3>
-                         <div class="text-sm text-blue-600 flex items-center gap-1">
-                             <span class="text-lg">📅</span>
-                             <span class="font-medium">05 & 06 Juni 2025</span>
-                         </div>
-                     </div>
+                        <!-- Baris atas: judul + tanggal -->
+                        <div class="flex justify-between items-start">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                                Webinar 4 : Strategi Pemilihan Reinforcement & Pembuatan Prioritas Intervensi Perilaku
+                            </h3>
+                            <div class="text-sm text-blue-600 flex items-center gap-1">
+                                <span class="text-lg">📅</span>
+                                <span class="font-medium">05 & 06 Juni 2025</span>
+                            </div>
+                        </div>
 
-                     <!-- Baris ikon segitiga -->
-                     <div class="flex justify-between items-center mt-2">
-                         <span></span> <!-- untuk menjaga jarak kiri -->
-                         <span class="faq-icon text-xl transform transition-transform duration-300">▼</span>
-                     </div>
+                        <!-- Baris ikon segitiga -->
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span> <!-- untuk menjaga jarak kiri -->
+                            <span class="faq-icon text-xl transform transition-transform duration-300">▼</span>
+                        </div>
 
-                     <div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-                         <img src="./assets/icon/open-book.png" alt="" class="w-8 h-8 mr-2">
-                         <p class="font-semibold text-gray-800">Pemateri : M.Mustain</p>
-                         <h4 class="font-semibold text-gray-800">Deskripsi</h4>
-                         <ul class="list-disc list-inside">
-                             <li><strong>Konsep Dasar Reinforcement dalam Perilaku: </strong>Perbedaan antara
-                                 reinforcement positif dan negatif</li>
-                             <li><strong>Strategi Pemilihan Reinforcement yang Efektif: </strong>Identifikasi
-                                 preferensi individu (student-centered reinforcement)</li>
-                             <li><strong>Analisis dan Identifikasi Masalah Perilaku: </strong>Teknik sederhana
-                                 mengenali perilaku yang menjadi hambatan
-                             </li>
-                             <li><strong>Menentukan Prioritas Intervensi Perilaku: </strong>Menentukan Prioritas
-                                 Intervensi Perilaku</li>
-                             <li><strong>Studi Kasus dan Praktik Langsung: </strong>Simulasi memilih reinforcement
-                                 berdasarkan karakter individu</li>
-                         </ul>
-                         <div class="text-right">
-                             <a href="https://lynk.id/hafecs/jlyvzd95wlj1"
-                                 target="_blank"
-                                 class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
-                                 Webinar Sekarang!</a>
-                         </div>
-                     </div>
-                 </div>
+                        <div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
+                            <img src="./assets/icon/open-book.png" alt="" class="w-8 h-8 mr-2">
+                            <p class="font-semibold text-gray-800">Pemateri : M.Mustain</p>
+                            <h4 class="font-semibold text-gray-800">Deskripsi</h4>
+                            <ul class="list-disc list-inside">
+                                <li><strong>Konsep Dasar Reinforcement dalam Perilaku: </strong>Perbedaan antara
+                                    reinforcement positif dan negatif</li>
+                                <li><strong>Strategi Pemilihan Reinforcement yang Efektif: </strong>Identifikasi
+                                    preferensi individu (student-centered reinforcement)</li>
+                                <li><strong>Analisis dan Identifikasi Masalah Perilaku: </strong>Teknik sederhana
+                                    mengenali perilaku yang menjadi hambatan
+                                </li>
+                                <li><strong>Menentukan Prioritas Intervensi Perilaku: </strong>Menentukan Prioritas
+                                    Intervensi Perilaku</li>
+                                <li><strong>Studi Kasus dan Praktik Langsung: </strong>Simulasi memilih reinforcement
+                                    berdasarkan karakter individu</li>
+                            </ul>
+                            <div class="text-right">
+                                <a href="https://lynk.id/hafecs/jlyvzd95wlj1" target="_blank"
+                                    class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
+                                    Webinar Sekarang!</a>
+                            </div>
+                        </div>
+                    </div>
 
                     <!-- WEBINAR 5 -->
                     <div
@@ -592,8 +718,7 @@
                                     konvensional vs berbasis deep learning dan PCK</li>
                             </ul>
                             <div class="text-right">
-                                <a href="http://lynk.id/hafecs/k9p1onmkpz8z"
-                                    target="_blank"
+                                <a href="http://lynk.id/hafecs/k9p1onmkpz8z" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -640,8 +765,7 @@
                                     merancang satu unit pembelajaran</li>
                             </ul>
                             <div class="text-right">
-                                <a href="http://lynk.id/hafecs/3e2m72z6oo7x"
-                                    target="_blank"
+                                <a href="http://lynk.id/hafecs/3e2m72z6oo7x" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -687,8 +811,7 @@
                                     belajar berbasis proyek (Project-Based Learning)</li>
                             </ul>
                             <div class="text-right">
-                                <a href="http://lynk.id/hafecs/3x2ek24lype9"
-                                    target="_blank"
+                                <a href="http://lynk.id/hafecs/3x2ek24lype9" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -735,8 +858,7 @@
                                 <li><strong>Simulasi dan Studi Kasus : </strong>Menganalisis contoh modul coding</li>
                             </ul>
                             <div class="text-right">
-                                <a href="https://lynk.id/hafecs/v1wkjw7y09lm"
-                                    target="_blank"
+                                <a href="https://lynk.id/hafecs/v1wkjw7y09lm" target="_blank"
                                     class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition">Beli
                                     Webinar Sekarang!</a>
                             </div>
@@ -749,11 +871,11 @@
 
             <!-- FAQ Toggle Script -->
             <script>
-                document.addEventListener("DOMContentLoaded", function() {
+                document.addEventListener("DOMContentLoaded", function () {
                     const items = document.querySelectorAll(".faq-item");
 
                     items.forEach(item => {
-                        item.addEventListener("click", function() {
+                        item.addEventListener("click", function () {
                             const answer = this.querySelector(".faq-answer");
                             const icon = this.querySelector(".faq-icon");
 
@@ -773,8 +895,9 @@
                 });
             </script>
         </section>
+        <!-- End Timeline -->
 
-
+        <!-- Sertifikat -->
         <section class="py-8">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -820,7 +943,7 @@
                             class="w-[500px] h-auto rounded-md">
                         <div class="mt-3 text-center">
                             <button
-                            class="px-10 py-2 rounded-lg text-blue-700 bg-yellow-400 hover:bg-yellow-700 transition font-bold text-xl">
+                                class="px-10 py-2 rounded-lg text-blue-700 bg-yellow-400 hover:bg-yellow-700 transition font-bold text-xl">
                                 Sertifikat Kompetensi
                             </button>
                         </div>
@@ -828,7 +951,9 @@
                 </div>
             </div>
         </section>
+        <!-- End Sertifikat -->
 
+        <!-- Fasilitas -->
         <section class="py-10 px-5 bg-white mt-10">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -884,7 +1009,9 @@
             </div>
             <p class="text-xs text-blue-500 mt-4 text-center">*Syarat dan Ketentuan Berlaku</p>
         </section>
+        <!-- End Fasilitas -->
 
+        <!-- Review Alumni -->
         <section class="w-full px-5 py-16 text-gray-900" id="testimonials">
             <div class="max-w-5xl mx-auto px-5 text-center py-6">
                 <!-- Tag -->
@@ -919,7 +1046,10 @@
                         <strong class="block text-xl text-gray-900">SUGIH, S.Pd.,Gr.,S.S</strong>
                         <span class="text-gray-500 text-sm">Guru SMAN 1 Balai Riam, Kab. Sukamara</span>
                         <p class="text-gray-600 italic mt-4">
-                            "Setelah mengikuti Webinar Series HAFECS, saya mendapatkan banyak wawasan baru, khususnya dalam literasi, numerasi, dan pendekatan pembelajaran berbasis teknologi. Materinya aplikatif dan sangat membantu meningkatkan kualitas pengajaran saya di kelas. Kegiatan ini sangat saya rekomendasikan bagi para pendidik yang ingin terus berkembang.
+                            "Setelah mengikuti Webinar Series HAFECS, saya mendapatkan banyak wawasan baru, khususnya
+                            dalam literasi, numerasi, dan pendekatan pembelajaran berbasis teknologi. Materinya
+                            aplikatif dan sangat membantu meningkatkan kualitas pengajaran saya di kelas. Kegiatan ini
+                            sangat saya rekomendasikan bagi para pendidik yang ingin terus berkembang.
                             "
                         </p>
                     </div>
@@ -934,7 +1064,11 @@
                         <strong class="block text-xl text-gray-900">Isariani, S.Pd</strong>
                         <span class="text-gray-500 text-sm">TKN Pembina Jekan Jaya</span>
                         <p class="text-gray-600 italic mt-4">
-                            "Dari hasil mengikuti webinar HAFECS, saya mendapatkan banyak ilmu, pelajaran, dan teman-teman baru. Saya belajar berbagai permainan edukatif yang memanfaatkan potensi diri, menciptakan gerakan, lagu, dan tepuk tangan baru, membentuk kelompok, serta melatih fokus dan konsentrasi siswa. Ilmu-ilmu baru ini sangat bermanfaat dan siap saya terapkan di kelas bersama anak didik saya."
+                            "Dari hasil mengikuti webinar HAFECS, saya mendapatkan banyak ilmu, pelajaran, dan
+                            teman-teman baru. Saya belajar berbagai permainan edukatif yang memanfaatkan potensi diri,
+                            menciptakan gerakan, lagu, dan tepuk tangan baru, membentuk kelompok, serta melatih fokus
+                            dan konsentrasi siswa. Ilmu-ilmu baru ini sangat bermanfaat dan siap saya terapkan di kelas
+                            bersama anak didik saya."
                         </p>
                     </div>
                 </div>
@@ -957,6 +1091,7 @@
                 </div>
             </div>
         </section>
+        <!-- End Review Alumni -->
 
 
         <!-- <section>
@@ -1079,7 +1214,8 @@
                 <div>
                     <h2 class="text-lg font-semibold">Kontak</h2>
                     <ul class="mt-2 space-y-2 text-sm">
-                        <li><i class="fas fa-map-marker-alt text-yellow-400"></i>JL. Brigjend. H. Hasan Basri KM 11, Ray 5, Kel. Handil Bakti, Kec. Alalak, Kab. Barito Kuala, Prov. Kalimantan Selatan</li>
+                        <li><i class="fas fa-map-marker-alt text-yellow-400"></i>JL. Brigjend. H. Hasan Basri KM 11, Ray
+                            5, Kel. Handil Bakti, Kec. Alalak, Kab. Barito Kuala, Prov. Kalimantan Selatan</li>
                         <!-- <li><i class="fas fa-phone-alt text-yellow-400"></i> +62 21 1234 5678</li> -->
                         <li><i class="fas fa-envelope text-yellow-400"></i> info@webinarprogram.id</li>
                     </ul>
