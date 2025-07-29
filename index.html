@@ -3,19 +3,29 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Ikuti webinar eksklusif HAFECS untuk pendidik dan profesional pendidikan. Dapatkan sertifikasi, promo menarik, dan insight terbaru di bidang edukasi.">
-        <meta name="keywords" content="webinar HAFECS, sertifikasi guru, pendidikan, pelatihan guru, promo pendidikan, teaching and learning certification">
-        <meta name="author" content="HAFECS Team">
-		<title>Webinar HAFECS</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		<meta
+			name="description"
+			content="Ikuti VirtuClass eksklusif HAFECS untuk pendidik dan profesional pendidikan. Dapatkan sertifikasi, promo menarik, dan insight terbaru di bidang edukasi."
 		/>
-        <link href="output.css" rel="stylesheet">
-        <link rel="icon" href="./assets/icon/cropped-favicon.png" type="image/png">
+		<meta
+			name="keywords"
+			content="ElevateClass HAFECS, sertifikasi guru, pendidikan, pelatihan guru, promo pendidikan, teaching and learning certification"
+		/>
+		<meta name="author" content="HAFECS Team" />
+		<title>ElevateClass HAFECS</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link href="output.css" rel="stylesheet" />
+		<link
+			rel="icon"
+			href="./assets/icon/cropped-favicon.png"
+			type="image/png"
+		/>
 	</head>
-
 
 	<body>
 		<!-- Navbar -->
@@ -87,7 +97,7 @@
 							href="#mentor"
 							class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
 						>
-							Mentor
+							Trainer
 							<span class="nav-underline"></span>
 						</a>
 						<a
@@ -100,23 +110,18 @@
 					</div>
 
 					<!-- Enhanced Promo Code with Extended Text -->
-					<div class="hidden lg:flex lg:items-center">
-						<div
-							class="promo-container relative overflow-hidden rounded-lg shadow-lg"
-						>
-							<div
-								class="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 animate-pulse-slow"
-							></div>
-							<span
-								id="promo-code"
-								class="relative cursor-pointer text-xs font-bold bg-yellow-300 text-gray-800 px-3 py-1.5 rounded-md hover:bg-yellow-400 transition-all duration-200 flex items-center"
-								onclick="copyPromoCode()"
-							>
-								<span class="animate-bounce inline-block mr-1">🎁</span>
-								<strong>Promo Code untuk 50 orang Pertama: EARLYBIRD49%</strong>
-							</span>
-						</div>
-					</div>
+					<!-- <div class="hidden lg:flex lg:items-center">
+                    <div class="promo-container relative overflow-hidden rounded-lg shadow-lg">
+                        <div class="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 animate-pulse-slow">
+                        </div>
+                        <span id="promo-code"
+                            class="relative cursor-pointer text-xs font-bold bg-yellow-300 text-gray-800 px-3 py-1.5 rounded-md hover:bg-yellow-400 transition-all duration-200 flex items-center"
+                            onclick="copyPromoCode()">
+                            <span class="animate-bounce inline-block mr-1">🎁</span>
+                            <strong>Promo Code untuk 50 orang Pertama: EARLYBIRD49%</strong>
+                        </span>
+                    </div>
+                </div> -->
 				</div>
 
 				<!-- Compact Mobile Menu with Animation -->
@@ -148,7 +153,7 @@
 					>
 
 					<!-- Mobile Promo Code with Animation and Extended Text -->
-					<div
+					<!-- <div
 						class="mt-1 bg-gradient-to-r from-yellow-200 to-yellow-100 p-1 rounded-md border border-yellow-300 animate-pulse"
 					>
 						<span
@@ -159,7 +164,7 @@
 							<span class="animate-bounce inline-block mr-1">🎁</span>
 							<strong>Promo Code untuk 50 orang Pertama: EARLYBIRD49%</strong>
 						</span>
-					</div>
+					</div> -->
 				</div>
 
 				<style>
@@ -288,6 +293,50 @@
 		</header>
 		<!-- End Navbar -->
 
+		<style>
+			.popup-hidden {
+				display: none;
+			}
+
+			.popup-fade-in {
+				animation: fadeIn 0.3s ease-in-out;
+			}
+
+			@keyframes fadeIn {
+				from {
+					opacity: 0;
+				}
+
+				to {
+					opacity: 1;
+				}
+			}
+
+			.promo-gradient {
+				background: linear-gradient(to right, #2563eb, #7c3aed);
+			}
+
+			.copy-animation {
+				animation: pulse 0.5s ease-in-out;
+			}
+
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+				}
+
+				50% {
+					transform: scale(1.05);
+				}
+
+				100% {
+					transform: scale(1);
+				}
+			}
+		</style>
+
+		<!-- POP UP PROMOSI -->
+
 		<!-- Beli Webiner -->
 		<section
 			class="text-center pt-12 px-4 py-12 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100"
@@ -303,32 +352,32 @@
 					<div class="carousel-container">
 						<div class="carousel-slider">
 							<img
-								src="./assets/img/poster.jpg"
+								src="./assets/img/poster_depan_1.png"
 								alt="Poster Utama"
 								class="carousel-image"
 							/>
-							<img
-								src="./assets/img/WhatsApp Image 2025-03-25 at 10.03.43_1b8cb901.jpg"
+							<!-- <img
+								src="./assets/img/poster_2.png"
 								alt="Poster Deep Learning"
 								class="carousel-image"
-							/>
+							/> -->
 							<!-- <img src="./assets/img/poster.jpg" alt="Bootcamp Image 3" class="carousel-image" /> -->
 						</div>
 
 						<!-- Navigation Dots -->
 						<div class="carousel-dots">
 							<span class="dot active" onclick="currentSlide(1)"></span>
-							<span class="dot" onclick="currentSlide(2)"></span>
+							<!-- <span class="dot" onclick="currentSlide(2)"></span> -->
 							<!-- <span class="dot" onclick="currentSlide(3)"></span> -->
 						</div>
 
 						<!-- Navigation Arrows -->
-						<button class="carousel-btn prev" onclick="changeSlide(-1)">
+						<!-- <button class="carousel-btn prev" onclick="changeSlide(-1)">
 							&#10094;
 						</button>
 						<button class="carousel-btn next" onclick="changeSlide(1)">
 							&#10095;
-						</button>
+						</button> -->
 					</div>
 				</div>
 
@@ -344,35 +393,40 @@
 					<!-- Jadwal dan Button -->
 					<div class="flex justify-between items-center flex-wrap">
 						<div>
-							<h2 class="text-lg font-bold text-gray-800 max-w-sm">
-								Webinar 1: Teknik dan Strategi Bertanya dalam Deep Learning
+							<h2 class="text-lg font-bold text-gray-700">
+								Mendidik Nalar, Bukan Sekedar Mengajar : Strategi Pembelajaran
+								HOTS (Higher Order Thinking Skills) di Era AI & Coding
 							</h2>
-							<p class="text-gray-600 text-sm mb-2">29 - 30 April 2025</p>
+							<ul class="text-gray-600 text-lg mb-2 list-disc list-inside">
+								<li>E-Sertifikat 4 JP</li>
+								<li>Ilmu yang bermanfaat</li>
+								<li>Grup diskusi & relasi</li>
+							</ul>
 						</div>
-						<a
-							href="#timeline"
+						<!-- <button
+							id="openModalBtn"
 							class="mt-2 md:mt-0 py-2 px-4 bg-blue-500 text-white hover:bg-blue-600 rounded-md text-sm transition inline-block"
 						>
-							🔁 Webinar Lainnya
-						</a>
+							🔁 VirtuClass Lainnya
+						</button> -->
 					</div>
 
 					<!-- Harga -->
-					<div class="mt-2">
-                        <p class="text-md text-red-500 line-through">Rp300.000</p>
-                        <p class="text-3xl font-extrabold text-gray-800">Rp200.000</p>
-                      </div>
+					<!-- <div class="mt-2">
+						<p class="text-md text-red-500 line-through">Rp.300.000</p>
+						<p class="text-3xl font-extrabold text-gray-800">Rp.49.000</p>
+					</div> -->
 
 					<!-- Sisa Peserta -->
 					<p
 						class="text-white text-sm bg-gradient-to-r from-blue-400 to-blue-600 rounded-full px-4 py-1 inline-block font-medium shadow"
 					>
-						🧍 Peserta yang tersisa: <span class="font-bold">198</span>
+						🧍 Tingkatkan Skillmu Bareng ElevateClass
 					</p>
 
 					<!-- CTA Button -->
 					<a
-						href="https://lynk.id/hafecs/k9pg5o7xg606"
+						href="https://s.id/daftar_elevateclass"
 						target="_blank"
 						class="inline-block"
 					>
@@ -388,9 +442,11 @@
 							></span>
 
 							<div
-								class="relative flex items-center justify-between py-3 px-6 text-lg text-white rounded-lg transform -translate-y-1 bg-yellow-500 gap-3 transition duration-[600ms] ease-[cubic-bezier(0.3,0.7,0.4,1)] group-hover:-translate-y-1.5 group-hover:duration-[250ms] group-active:-translate-y-0.5 brightness-100 group-hover:brightness-110 auto-bounce"
+								class="relative flex items-center justify-between py-3 px-6 text-lg font-bold text-white rounded-lg transform -translate-y-1 bg-yellow-500 gap-3 transition duration-[600ms] ease-[cubic-bezier(0.3,0.7,0.4,1)] group-hover:-translate-y-1.5 group-hover:duration-[250ms] group-active:-translate-y-0.5 brightness-100 group-hover:brightness-110 auto-bounce"
 							>
-								<span class="select-none">🚀 Beli Webinar Sekarang!</span>
+								<span class="select-none"
+									>🚀 Daftar ElevateClass Sekarang!</span
+								>
 
 								<svg
 									viewBox="0 0 20 20"
@@ -506,8 +562,28 @@
 				.dot:hover {
 					background-color: white;
 				}
-			</style>
 
+				.modal-transition {
+					transition: opacity 0.3s ease, transform 0.3s ease;
+				}
+
+				.modal-hidden {
+					opacity: 0;
+					transform: scale(0.95);
+					pointer-events: none;
+				}
+
+				.modal-visible {
+					opacity: 1;
+					transform: scale(1);
+					pointer-events: auto;
+				}
+
+				.card-hover:hover {
+					transform: translateY(-3px);
+					transition: transform 0.2s ease;
+				}
+			</style>
 			<!-- JavaScript for Carousel Functionality -->
 			<script>
 				let currentSlideIndex = 1;
@@ -558,10 +634,10 @@
 
 		<!-- MENTOR -->
 
-        <section class="py-10 mt-4" id="mentor">
-            <div class="max-w-5xl mx-auto px-5 text-center py-4">
-                <!-- Tag -->
-                <!-- <div class="mb-2">
+		<section class="py-10 mt-4" id="mentor">
+			<div class="max-w-5xl mx-auto px-5 text-center py-4">
+				<!-- Tag -->
+				<!-- <div class="mb-2">
                     <span class="inline-flex items-center gap-2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-xs font-bold shadow-sm">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -570,209 +646,25 @@
                         Our Mentor
                     </span>
                 </div> -->
-        
-                <!-- Heading -->
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight">
-                    Para Trainer
-                </h2>
-            </div>
-        
-            <div class="max-w-7xl mx-auto px-5 relative">
-                <!-- Navigation Buttons -->
-                <div>
-                    <button id="prev-button" class=" left-0 top-1/2 transform -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-full shadow-lg opacity-70 hover:opacity-100 transition-opacity focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                    
-                    <button id="next-button" class=" right-0 top-1/2 transform -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-full shadow-lg opacity-70 hover:opacity-100 transition-opacity focus:outline-none">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-        
-                <!-- Mentor Carousel -->
-                <div class="overflow-hidden" id="mentors-carousel">
-                    <div class="flex transition-transform duration-500 ease-in-out" id="mentors-slider">
-                        <!-- Mentor 1 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-blue-800 text-white px-2 py-1 text-xs font-semibold rounded-full">Master Trainer</span>
-                                <img src="./assets/img/pak_zulfikar.png" alt="Dr. Zulfikar Alimuddin - Director of HAFECS" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Dr. Zulfikar Alimuddin</h3>
-                                <p class="text-yellow-600 text-sm">Director of GIBS Junior and Senior High School</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Pakar Pendidikan dan Master Trainer di HAFECS dengan rekam jejak lebih dari 25 tahun di bidang pengembangan sumber daya Manusia, Beliau aktif di berbagai konferensi internasional. Spesialis dalam Teaching Mastery Framework (TMF), Active Based Enriched Curriculum (ABEC), serta pendekatan inovatif Linear Extrapolation—siap mentransformasi praktik pengajaran Bersama Bapak Ibu sekaliaun untuk menjadi lebih berdampak dan berkelanjutan.
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pembelajaran Inovatif</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pengembangan Metode Pengajaran</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Evaluasi Pendidikan</span>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Mentor 1 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/danang.jpg" alt="Danang Bagus Yudhistira - Deputy Director of HAFECS" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Danang Bagus Yudistira</h3>
-                                <p class="text-yellow-600 text-sm">Deputy Director and Senior Trainer HAFECS</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Pengalamannya mencakup program Fellowship Teacher di Australia, dosen praktisi di UNY, ULM, UPR dan IAIN Palangkaraya. Edutech enthusiast dan aktif dalam konferensi pendidikan, teknologi dan knowledge management di Indonesia, Singapura, UEA, Malaysia, dan Afrika Selatan, serta berbagai pelatihan pengembangan profesional.
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pengembangan Kurikulum</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Metode Pengajaran</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Evaluasi Pendidikan</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Mentor 2 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/yudistira.jpg" alt="Yudhistira Abdi Atmanegara" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Yudhistira Abdi Atmanegara</h3>
-                                <p class="text-yellow-600 text-sm">Head of Department Teaching and Learning Certification by HAFECS</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Senior trainer, Asesor dan guru bersertifikat dengan 13+ tahun pengalaman pendidikan. Ahli Teaching Mastery Framework (TMF), pengembangan metode ajar, penyusunan lesson plan efektif, penerapan taksonomi Bloom, leadership, manajemen kelas, dan penguatan keterampilan berpikir. Pembicara di 30+ kota/kabupaten se-Indonesia.
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pedagogi Modern</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pembelajaran Berbasis Proyek</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Psikologi Pendidikan</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Mentor 3 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
-                                <p class="text-yellow-600 text-sm">Head of Curriculum and Content Development Department</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Trainer dan guru pembelajar dengan pengalaman transformatif, aktif berkontribusi dalam
-                                    seminar, workshop, dan pelatihan bagi praktisi pendidikan. percaya bahwa pembelajaran
-                                    sepanjang hayat adalah kunci inovasi. Baginya, 
-                                    <em>"menjadi lifelong learner adalah sebuah keharusan dan kunci inovasi."</em>
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Teknologi Pendidikan</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">E-Learning</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Media Pembelajaran Digital</span>
-                                </div>
-                            </div>
-                        </div>
+				<!-- Heading -->
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight"
+				>
+					Para Trainer
+				</h2>
+			</div>
 
-                        <!-- Mentor 4 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
-                                <p class="text-yellow-600 text-sm">Head of Curriculum and Content Development Department</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Trainer dan guru pembelajar dengan pengalaman transformatif, aktif berkontribusi dalam
-                                    seminar, workshop, dan pelatihan bagi praktisi pendidikan. percaya bahwa pembelajaran
-                                    sepanjang hayat adalah kunci inovasi. Baginya, 
-                                    <em>"menjadi lifelong learner adalah sebuah keharusan dan kunci inovasi."</em>
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Teknologi Pendidikan</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">E-Learning</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Media Pembelajaran Digital</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Mentor 4 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/pak_taufiq.jpg" alt="Taufik Hidayat" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Taufik Hidayat</h3>
-                                <p class="text-yellow-600 text-sm">Senior Trainer</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Senior trainer di HAFECS dengan pengalaman komprehensif selama 12 tahun sebagai guru dan trainer profesional. Beliau telah memberikan kontribusi signifikan melalui program-program pelatihan di berbagai dinas pendidikan dan instansi pendidikan terkemuka di lebih dari 50 kota di seluruh wilayah Indonesia.
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pengajaran Efektif</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Managemen Kelas</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Literasi - Numerasi</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Mentor 5 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/ms_niken.png" alt="Niken Roro Hapsari - Koordinator Calon Guru Muda Inovatif Indonesia" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Niken Roro Hapsari</h3>
-                                <p class="text-yellow-600 text-sm">Koordinator Calon Guru Muda Inovatif Indonesia</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    (Penulisan buku, podcast, konten media sosial) dalam dunia pendidikan yang menjangkau berbagai kalangan pendidik dan pemangku kepentingan. Telah melatih di dinas dan instansi pendidikan sebanyak 40+ di berbagai wilayah Indonesia, berkontribusi pada pengembangan profesionalisme tenaga pendidik di tanah air.
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Metode Pembelajaran</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pembelajaran Digital</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pengembangan Project</span>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <!-- Mentor 6 -->
-                        <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/ms_aulida.png" alt="Aulida Mardiari" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Aulida Mardiari</h3>
-                                <p class="text-yellow-600 text-sm">Sekretaris Departemen Teaching & Learning Certification</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Trainer & Content Maker di bidang pendidikan, aktif dalam penulisan buku, artikel ilmiah, podcast, dan video pembelajaran interaktif. Telah memfasilitasi ratusan sesi training di berbagai dinas dan instansi pendidikan.
-Pembicara konferensi internasional, di antaranya:
-1. Improving Teacher's Pedagogical Competency - Hasnur Centre, ICCRE 2024
-2. PCK-based Learning Module to Improve Problem Solving Skills - Universiti Teknologi Malaysia, International Webinar 2023
-
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Pendidikan Karakter</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Soft Skills</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Emotional Intelligence</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <!-- Dots indicator -->
-                <div class="flex justify-center mt-6" id="dots-container">
-                    <!-- Dots will be generated by JavaScript -->
-                </div>
-            </div>
-        </section>
-
-		<!-- Timeline -->
-		<section
-			class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900"
-			id="timeline"
-		>
-			<div class="max-w-5xl mx-auto px-5 text-center py-12">
-				<!-- Tag -->
-				<div class="mb-2">
-					<span
-						class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-semibold shadow-sm"
+			<div class="max-w-7xl mx-auto px-5 relative">
+				<!-- Navigation Buttons -->
+				<div>
+					<button
+						id="next-button"
+						class="right-0 top-1/2 transform -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-full shadow-lg opacity-70 hover:opacity-100 transition-opacity focus:outline-none"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
-							class="w-4 h-4"
+							class="h-6 w-6"
 							fill="none"
 							viewBox="0 0 24 24"
 							stroke="currentColor"
@@ -781,638 +673,395 @@ Pembicara konferensi internasional, di antaranya:
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="2"
-								d="M12 14l9-5-9-5-9 5 9 5z"
+								d="M15 19l-7-7 7-7"
 							/>
+						</svg>
+					</button>
+
+					<button
+						id="prev-button"
+						class="left-0 top-1/2 transform -translate-y-1/2 z-10 bg-blue-800 text-white p-2 rounded-full shadow-lg opacity-70 hover:opacity-100 transition-opacity focus:outline-none"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="h-6 w-6"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
 								stroke-width="2"
-								d="M12 14l6.16-3.422a12.083 12.083 0 01.09 6.845L12 20l-6.25-2.577a12.083 12.083 0 01.09-6.845L12 14z"
+								d="M9 5l7 7-7 7"
 							/>
 						</svg>
-						Timeline
-					</span>
+					</button>
 				</div>
 
-				<!-- Heading -->
-				<h2
-					class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight"
-				>
-					Timeline dari Webinar HAFECS
-				</h2>
-			</div>
-
-			<div class="max-w-5xl mx-auto space-y-6">
-				<!-- FAQ Cards -->
-				<div class="grid gap-6">
-					<!-- Project Item Template -->
-					<!-- Repeat this block for each project -->
-					<!-- WEBINAR 1 -->
+				<!-- Mentor Carousel -->
+				<div class="overflow-hidden" id="mentors-carousel">
 					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+						class="flex transition-transform duration-500 ease-in-out"
+						id="mentors-slider"
 					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 1: Teknik dan Strategi Bertanya dalam Deep Learning
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">29 & 30 April 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 1 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">Pemateri : Ubaidillah</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong>Konsep Dasar Deep Learning:</strong> Apa itu deep
-									learning dalam konteks pendidikan?
-								</li>
-								<li>
-									<strong
-										>Peran Pertanyaan dalam Mendorong Deep Learning:</strong
+								<span
+									class="absolute top-3 right-3 bg-blue-800 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Master Trainer</span
+								>
+								<img
+									src="./assets/img/pak_zulfikar.png"
+									alt="Dr. Zulfikar Alimuddin - Director of HAFECS"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Dr. Zulfikar Alimuddin
+								</h3>
+								<p class="text-yellow-600 text-sm">
+									Director of GIBS Junior and Senior High School
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Pakar Pendidikan dan Master Trainer di HAFECS dengan rekam
+									jejak lebih dari 25 tahun di bidang pengembangan sumber daya
+									Manusia, Beliau aktif di berbagai konferensi internasional.
+									Spesialis dalam Teaching Mastery Framework (TMF), Active Based
+									Enriched Curriculum (ABEC), serta pendekatan inovatif Linear
+									Extrapolation—siap mentransformasi praktik pengajaran Bersama
+									Bapak Ibu sekaliaun untuk menjadi lebih berdampak
+									dan berkelanjutan.
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pembelajaran Inovatif</span
 									>
-									Bagaimana pertanyaan dapat membentuk pola pikir kritis dan
-									reflektif
-								</li>
-								<li>
-									<strong>Teknik Merancang Pertanyaan Tingkat Tinggi:</strong>
-									Menggunakan Taksonomi Bloom sebagai acuan
-								</li>
-								<li>
-									<strong
-										>Strategi Bertanya dalam Kelas atau Sesi Diskusi:</strong
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pengembangan Metode Pengajaran</span
 									>
-									Teknik bertanya berjenjang (scaffolding questioning)
-								</li>
-								<li>
-									<strong
-										>Latihan Merancang dan Menganalisis Pertanyaan:</strong
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Evaluasi Pendidikan</span
 									>
-									Menantang pemikiran kritis melalui dialog
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="https://lynk.id/hafecs/k9pg5o7xg606"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
-								>
-							</div>
-						</div>
-					</div>
-
-					<!-- WEBINAR 2 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 2 : Inovasi Pengembangan Modul Praktikum IPA
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">15 & 17 Mei 2025</span>
+								</div>
 							</div>
 						</div>
 
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 1 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">
-								Pemateri : Farida Hayati
-							</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong
-										>Peran Praktikum dalam Pembelajaran IPA Modern: </strong
-									>Mengapa praktikum penting dalam membangun literasi sains?
-								</li>
-								<li>
-									<strong
-										>Langkah-langkah Pengembangan Modul Praktikum IPA: </strong
-									>Merancang kegiatan eksperimen yang aman, relevan, dan
-									bermakna
-								</li>
-								<li>
-									<strong>Inovasi dalam Modul Praktikum: </strong>Integrasi
-									teknologi (AR/VR, simulasi digital, video eksperimen)
-								</li>
-								<li>
-									<strong>Evaluasi dan Refleksi Modul Praktikum: </strong>Teknik
-									penilaian berbasis praktikum (autentik & performatif)
-								</li>
-								<li>
-									<strong>Studi Kasus dan Praktik Desain Modul: </strong>Contoh
-									modul dari tingkat SD hingga SMA
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="http://lynk.id/hafecs/j528j41vvdlx"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/danang.jpg"
+									alt="Danang Bagus Yudhistira - Deputy Director of HAFECS"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Danang Bagus Yudistira
+								</h3>
+								<p class="text-yellow-600 text-sm">
+									Deputy Director and Senior Trainer HAFECS
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Pengalamannya mencakup program Fellowship Teacher di
+									Australia, dosen praktisi di UNY, ULM, UPR dan IAIN
+									Palangkaraya. Edutech enthusiast dan aktif dalam konferensi
+									pendidikan, teknologi dan knowledge management di Indonesia,
+									Singapura, UEA, Malaysia, dan Afrika Selatan, serta berbagai
+									pelatihan pengembangan profesional.
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pengembangan Kurikulum</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Metode Pengajaran</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Evaluasi Pendidikan</span
+									>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- WEBINAR 3 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 3 : Praktik & Simulasi Applied Behavior Therapy
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">26 & 27 Mei 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 2 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">
-								Pemateri : Iffah Rufaidah
-							</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong
-										>Pengantar Singkat Applied Behavior Therapy (ABT): </strong
-									>Apa itu ABT dan bagaimana pendekatan ini bekerja?
-								</li>
-								<li>
-									<strong>Langkah-langkah Praktis dalam ABT: </strong
-									>Identifikasi perilaku target dan perilaku pengganti
-								</li>
-								<li>
-									<strong>Simulasi Penyusunan Program ABT: </strong>Praktik
-									menggunakan format ABA/ABT chart
-								</li>
-								<li>
-									<strong>Simulasi Sesi Terapi dan Teknik Intervensi: </strong
-									>Teknik prompting, shaping, chaining, dan fading
-								</li>
-								<li>
-									<strong>Analisis Kasus dan Refleksi Praktik: </strong>Studi
-									kasus nyata dan pembahasan solusi intervensinya
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="http://lynk.id/hafecs/qrjw0l5nvyog"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/yudistira.jpg"
+									alt="Yudhistira Abdi Atmanegara"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Yudhistira Abdi Atmanegara
+								</h3>
+								<p class="text-yellow-600 text-sm">
+									Head of Department Teaching and Learning Certification by
+									HAFECS
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Senior trainer, Asesor dan guru bersertifikat dengan 13+ tahun
+									pengalaman pendidikan. Ahli Teaching Mastery Framework (TMF),
+									pengembangan metode ajar, penyusunan lesson plan efektif,
+									penerapan taksonomi Bloom, leadership, manajemen kelas, dan
+									penguatan keterampilan berpikir. Pembicara di 30+
+									kota/kabupaten se-Indonesia.
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pedagogi Modern</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pembelajaran Berbasis Proyek</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Psikologi Pendidikan</span
+									>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- WEBINAR 4 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 4 : Strategi Pemilihan Reinforcement & Pembuatan
-								Prioritas Intervensi Perilaku
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">05 & 06 Juni 2025</span>
-							</div>
-						</div>
+						<!-- Mentor 3 -->
+						<!-- <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
+                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
+                                <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md" loading="lazy">
+                                <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
+                                <p class="text-yellow-600 text-sm">Head of Curriculum and Content Development Department</p>
+                                <p class="text-gray-600 text-sm mt-2 text-justify">
+                                    Trainer dan guru pembelajar dengan pengalaman transformatif, aktif berkontribusi dalam
+                                    seminar, workshop, dan pelatihan bagi praktisi pendidikan. percaya bahwa pembelajaran
+                                    sepanjang hayat adalah kunci inovasi. Baginya,
+                                    <em>"menjadi lifelong learner adalah sebuah keharusan dan kunci inovasi."</em>
+                                </p>
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Teknologi Pendidikan</span>
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">E-Learning</span>
+                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Media Pembelajaran Digital</span>
+                                </div>
+                            </div>
+                        </div> -->
 
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 4 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">Pemateri : M.Mustain</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong>Konsep Dasar Reinforcement dalam Perilaku: </strong
-									>Perbedaan antara reinforcement positif dan negatif
-								</li>
-								<li>
-									<strong
-										>Strategi Pemilihan Reinforcement yang Efektif: </strong
-									>Identifikasi preferensi individu (student-centered
-									reinforcement)
-								</li>
-								<li>
-									<strong>Analisis dan Identifikasi Masalah Perilaku: </strong
-									>Teknik sederhana mengenali perilaku yang menjadi hambatan
-								</li>
-								<li>
-									<strong>Menentukan Prioritas Intervensi Perilaku: </strong
-									>Menentukan Prioritas Intervensi Perilaku
-								</li>
-								<li>
-									<strong>Studi Kasus dan Praktik Langsung: </strong>Simulasi
-									memilih reinforcement berdasarkan karakter individu
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="https://lynk.id/hafecs/jlyvzd95wlj1"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/ubaid.jpg"
+									alt="Ubaidillah"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
+								<p class="text-yellow-600 text-sm">
+									Head of Curriculum and Content Development Department
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Trainer dan guru pembelajar dengan pengalaman transformatif,
+									aktif berkontribusi dalam seminar, workshop, dan pelatihan
+									bagi praktisi pendidikan. percaya bahwa pembelajaran sepanjang
+									hayat adalah kunci inovasi. Baginya,
+									<em
+										>"menjadi lifelong learner adalah sebuah keharusan dan kunci
+										inovasi."</em
+									>
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Teknologi Pendidikan</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>E-Learning</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Media Pembelajaran Digital</span
+									>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- WEBINAR 5 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 5 : Mendesain pembelajaran berbasis Deep Learning dengan
-								Pedagogical Content Knowledge (PCK)
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">16 & 17 Juni 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 4 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">
-								Pemateri : Taufik Hidayat
-							</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong>Konsep Deep Learning dalam Pembelajaran IPA: </strong
-									>Strategi merancang pembelajaran yang mendorong analisis,
-									evaluasi, dan aplikasi konsep IPA
-								</li>
-								<li>
-									<strong
-										>Pemahaman Pedagogical Content Knowledge (PCK) : </strong
-									>Mengintegrasikan PCK dalam perancangan modul praktikum IPA
-								</li>
-								<li>
-									<strong
-										>Langkah Inovatif Pengembangan Modul Praktikum : </strong
-									>Mendesain kegiatan praktikum berbasis eksplorasi dan inkuiri
-								</li>
-								<li>
-									<strong
-										>Desain Modul Praktikum Berbasis Deep Learning + PCK : </strong
-									>Praktik menyusun modul praktikum dengan alur: tujuan –
-									aktivitas – refleksi – asesmen
-								</li>
-								<li>
-									<strong>Refleksi dan Studi Kasus Nyata : </strong>Analisis
-									modul praktikum konvensional vs berbasis deep learning dan PCK
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="http://lynk.id/hafecs/k9p1onmkpz8z"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/pak_taufiq.jpg"
+									alt="Taufik Hidayat"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Taufik Hidayat
+								</h3>
+								<p class="text-yellow-600 text-sm">Senior Trainer</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Senior trainer di HAFECS dengan pengalaman komprehensif selama
+									12 tahun sebagai guru dan trainer profesional. Beliau telah
+									memberikan kontribusi signifikan melalui program-program
+									pelatihan di berbagai dinas pendidikan dan instansi pendidikan
+									terkemuka di lebih dari 50 kota di seluruh wilayah Indonesia.
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pengajaran Efektif</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Managemen Kelas</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Literasi - Numerasi</span
+									>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- WEBINAR 6 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 6 : Merancang modul ajar & desain pembelajaran
-								berbantuan AI
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">25 & 26 Juni 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 5 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">
-								Pemateri : Danang Bagus Yudhistira
-							</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong>Pemahaman Dasar tentang AI dalam Pendidikan : </strong
-									>Apa itu AI dan bagaimana perannya dalam konteks pembelajaran?
-								</li>
-								<li>
-									<strong
-										>Langkah Merancang Modul Ajar dengan Bantuan AI : </strong
-									>Mengembangkan konten, aktivitas, dan asesmen dengan bantuan
-									AI
-								</li>
-								<li>
-									<strong>Desain Pembelajaran Inovatif dan Adaptif : </strong
-									>Mendesain pengalaman belajar yang diferensiatif dan personal
-								</li>
-								<li>
-									<strong
-										>Etika dan Batasan dalam Penggunaan AI untuk Pendidikan : </strong
-									>Bagaimana memanfaatkan AI secara bijak dan tidak sepenuhnya
-									menggantikan kreativitas pendidik
-								</li>
-								<li>
-									<strong>Latihan Praktis & Studi Kasus : </strong>Simulasi
-									penggunaan tools AI dalam merancang satu unit pembelajaran
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="http://lynk.id/hafecs/3e2m72z6oo7x"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/ms_niken.png"
+									alt="Niken Roro Hapsari - Koordinator Calon Guru Muda Inovatif Indonesia"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Niken Roro Hapsari
+								</h3>
+								<p class="text-yellow-600 text-sm">
+									Koordinator Calon Guru Muda Inovatif Indonesia
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									(Penulisan buku, podcast, konten media sosial) dalam dunia
+									pendidikan yang menjangkau berbagai kalangan pendidik dan
+									pemangku kepentingan. Telah melatih di dinas dan instansi
+									pendidikan sebanyak 40+ di berbagai wilayah Indonesia,
+									berkontribusi pada pengembangan profesionalisme tenaga
+									pendidik di tanah air.
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Metode Pembelajaran</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pembelajaran Digital</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Pengembangan Project</span
+									>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<!-- WEBINAR 7 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 7 : Praktik dan Simulasi Coding untuk Anak
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">07 & 08 Juli 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
+						<!-- Mentor 6 -->
+						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+							<div
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">Pemateri : Mr.Singgih</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong
-										>Mengapa Coding Penting Dikenalkan pada Anak Sejak Dini : </strong
-									>Manfaat kognitif dan sosial dari belajar coding
-								</li>
-								<li>
-									<strong>Mengenal Platform Coding Ramah Anak : </strong>Review
-									dan demonstrasi penggunaan Scratch, Blockly, Code.org, dan
-									lainnya
-								</li>
-								<li>
-									<strong>Simulasi Kegiatan Coding untuk Anak : </strong>Praktik
-									membuat animasi, cerita interaktif, dan mini games
-								</li>
-								<li>
-									<strong>Tips & Strategi Mengajar Coding untuk Anak : </strong
-									>Cara menyampaikan konsep coding dengan bahasa sederhana
-								</li>
-								<li>
-									<strong
-										>Integrasi Coding dalam Kegiatan Belajar Sehari-hari : </strong
-									>Membuat modul belajar berbasis proyek (Project-Based
-									Learning)
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="http://lynk.id/hafecs/3x2ek24lype9"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
+								<span
+									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
+									>Trainer</span
 								>
+								<img
+									src="./assets/img/ms_aulida.png"
+									alt="Aulida Mardiari"
+									class="w-full h-60 object-cover rounded-md"
+									loading="lazy"
+								/>
+								<h3 class="font-bold text-lg mt-3 text-blue-900">
+									Aulida Mardiari
+								</h3>
+								<p class="text-yellow-600 text-sm">
+									Program Development Strategist of Teaching & Learning
+									Certification Department
+								</p>
+								<p class="text-gray-600 text-sm mt-2 text-justify">
+									Trainer & Content Maker di bidang pendidikan, aktif dalam
+									penulisan buku, artikel ilmiah, podcast, dan video
+									pembelajaran interaktif. Telah memfasilitasi ratusan sesi
+									training di berbagai dinas dan instansi pendidikan. Pembicara
+									konferensi internasional, di antaranya: 1. Improving Teacher's
+									Pedagogical Competency - Hasnur Centre, ICCRE 2024 2.
+									PCK-based Learning Module to Improve Problem Solving Skills -
+									Universiti Teknologi Malaysia, International Webinar 2023
+								</p>
+								<div class="mt-3 flex flex-wrap gap-2">
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Metode Pengajaran</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>Problem Based Learning (PBL)</span
+									>
+									<span
+										class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md"
+										>STEM Education</span
+									>
+								</div>
 							</div>
 						</div>
 					</div>
+				</div>
 
-					<!-- WEBINAR 8 -->
-					<div
-						class="faq-item bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
-					>
-						<!-- Baris atas: judul + tanggal -->
-						<div class="flex justify-between items-start">
-							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Webinar 8 : Membedah Rahasia Pembelajaran Coding
-							</h3>
-							<div class="text-sm text-blue-600 flex items-center gap-1">
-								<span class="text-lg">📅</span>
-								<span class="font-medium">17 & 18 Juli 2025</span>
-							</div>
-						</div>
-
-						<!-- Baris ikon segitiga -->
-						<div class="flex justify-between items-center mt-2">
-							<span></span>
-							<!-- untuk menjaga jarak kiri -->
-							<span
-								class="faq-icon text-xl transform transition-transform duration-300"
-								>▼</span
-							>
-						</div>
-
-						<div class="faq-answer hidden mt-4 text-sm text-gray-700 space-y-2">
-							<img
-								src="./assets/icon/open-book.png"
-								alt=""
-								class="w-8 h-8 mr-2"
-							/>
-							<p class="font-semibold text-gray-800">
-								Pemateri : Hamas Akief Sanie
-							</p>
-							<h4 class="font-semibold text-gray-800">Deskripsi</h4>
-							<ul class="list-disc list-inside">
-								<li>
-									<strong
-										>Mengapa Coding Penting untuk Anak dan Remaja : </strong
-									>Peran coding dalam membangun 21st century skills
-								</li>
-								<li>
-									<strong
-										>Prinsip Dasar dan Pedagogi Pembelajaran Coding : </strong
-									>Pendekatan berbasis proyek (Project-Based Learning) dan
-									eksplorasi
-								</li>
-								<li>
-									<strong>Membedah Tools dan Platform Coding Populer : </strong
-									>Pengenalan dan perbandingan: Scratch, Tynker, Blockly,
-									Code.org, dll
-								</li>
-								<li>
-									<strong>Merancang Kegiatan Coding yang Menyenangkan : </strong
-									>Contoh aktivitas coding harian yang relevan dengan kehidupan
-									anak
-								</li>
-								<li>
-									<strong>Strategi Mengajar Coding dengan Efektif : </strong
-									>Mengatasi tantangan umum dalam pembelajaran coding
-								</li>
-								<li>
-									<strong>Simulasi dan Studi Kasus : </strong>Menganalisis
-									contoh modul coding
-								</li>
-							</ul>
-							<div class="text-right">
-								<a
-									href="https://lynk.id/hafecs/v1wkjw7y09lm"
-									target="_blank"
-									class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg shadow-md transition"
-									>Beli Webinar Sekarang!</a
-								>
-							</div>
-						</div>
-					</div>
-					<!-- End Project Item Template -->
-					<!-- Repeat with Project 2, 3, 4 as needed (you can duplicate and change the titles/links) -->
+				<!-- Dots indicator -->
+				<div class="flex justify-center mt-6" id="dots-container">
+					<!-- Dots will be generated by JavaScript -->
 				</div>
 			</div>
-
-			<!-- FAQ Toggle Script -->
-			<script>
-				document.addEventListener("DOMContentLoaded", function () {
-					const items = document.querySelectorAll(".faq-item");
-
-					items.forEach((item) => {
-						item.addEventListener("click", function () {
-							const answer = this.querySelector(".faq-answer");
-							const icon = this.querySelector(".faq-icon");
-
-							// Hide other open answers
-							document.querySelectorAll(".faq-answer").forEach((a) => {
-								if (a !== answer) a.classList.add("hidden");
-							});
-							document.querySelectorAll(".faq-icon").forEach((i) => {
-								if (i !== icon) i.classList.remove("rotate-180");
-							});
-
-							// Toggle current
-							answer.classList.toggle("hidden");
-							icon.classList.toggle("rotate-180");
-						});
-					});
-				});
-			</script>
 		</section>
+
+		<!-- Timeline -->
+
 		<!-- End Timeline -->
 
 		<!-- Sertifikat -->
@@ -1736,7 +1385,7 @@ Pembicara konferensi internasional, di antaranya:
 					<p
 						class="text-blue-600 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-500"
 					>
-						Belajar langsung bersama mentor
+						Belajar langsung bersama Trainer
 					</p>
 				</div>
 
@@ -1768,7 +1417,7 @@ Pembicara konferensi internasional, di antaranya:
 					<h3
 						class="font-bold text-lg mt-2 text-blue-800 group-hover:text-blue-600 transition-colors duration-300"
 					>
-						Konsultasi Projek by Chat
+						Konsultasi Proyek via Chat
 					</h3>
 					<p
 						class="text-blue-600 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-500"
@@ -1916,7 +1565,7 @@ Pembicara konferensi internasional, di antaranya:
 					<h3
 						class="font-bold text-lg mt-2 text-blue-800 group-hover:text-blue-600 transition-colors duration-300"
 					>
-						4 Projek Portofolio
+						4 Proyek Portofolio
 					</h3>
 					<p
 						class="text-blue-600 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-500"
@@ -1953,7 +1602,7 @@ Pembicara konferensi internasional, di antaranya:
 					<h3
 						class="font-bold text-lg mt-2 text-blue-800 group-hover:text-blue-600 transition-colors duration-300"
 					>
-						Sertifikat Kompetensi 20 JP*
+						Sertifikat Kompetensi Pengetahuan 20 JP*
 					</h3>
 					<p
 						class="text-blue-600 text-sm mt-1 opacity-0 group-hover:opacity-100 transition-all duration-500"
@@ -2070,7 +1719,7 @@ Pembicara konferensi internasional, di antaranya:
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Setelah mengikuti Webinar Series HAFECS, saya mendapatkan
+										Setelah mengikuti VirtuClass Series HAFECS, saya mendapatkan
 										banyak wawasan baru, khususnya dalam literasi, numerasi, dan
 										pendekatan pembelajaran berbasis teknologi. Materinya
 										aplikatif dan sangat membantu meningkatkan kualitas
@@ -2122,9 +1771,9 @@ Pembicara konferensi internasional, di antaranya:
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Dari hasil mengikuti webinar HAFECS, saya mendapatkan banyak
-										ilmu, pelajaran, dan teman-teman baru. Saya belajar berbagai
-										permainan edukatif yang memanfaatkan potensi diri,
+										Dari hasil mengikuti VirtuClass HAFECS, saya mendapatkan
+										banyak ilmu, pelajaran, dan teman-teman baru. Saya belajar
+										berbagai permainan edukatif yang memanfaatkan potensi diri,
 										menciptakan gerakan, lagu, dan tepuk tangan baru, membentuk
 										kelompok, serta melatih fokus dan konsentrasi siswa.
 										Ilmu-ilmu baru ini sangat bermanfaat.
@@ -2173,8 +1822,8 @@ Pembicara konferensi internasional, di antaranya:
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Setelah mengikuti program TLC, saya memiliki lebih banyak
-										teknik dan strategi untuk membuat kelas saya lebih
+										Setelah mengikuti program VirtuClass, saya memiliki lebih
+										banyak teknik dan strategi untuk membuat kelas saya lebih
 										interaktif. Saya juga mendapatkan jaringan profesional yang
 										luas dari sesama pendidik di seluruh Indonesia.
 									</p>
@@ -2186,183 +1835,236 @@ Pembicara konferensi internasional, di antaranya:
 			</div>
 		</section>
 
-        <section class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900" id="faq">
-            <div class="max-w-5xl mx-auto px-5 text-center py-12">
-                <!-- Tag -->
-                <div class="mb-2">
-                    <span
-                        class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-semibold shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 14l6.16-3.422a12.083 12.083 0 01.09 6.845L12 20l-6.25-2.577a12.083 12.083 0 01.09-6.845L12 14z" />
-                        </svg>
-                        FAQ
-                    </span>
-                </div>
+		<section
+			class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900"
+			id="faq"
+		>
+			<div class="max-w-5xl mx-auto px-5 text-center py-12">
+				<!-- Tag -->
+				<div class="mb-2">
+					<span
+						class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-semibold shadow-sm"
+					>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							class="w-4 h-4"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 14l9-5-9-5-9 5 9 5z"
+							/>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M12 14l6.16-3.422a12.083 12.083 0 01.09 6.845L12 20l-6.25-2.577a12.083 12.083 0 01.09-6.845L12 14z"
+							/>
+						</svg>
+						FAQ
+					</span>
+				</div>
 
-                <!-- Heading -->
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight">
-                    Pertanyaan Umum
-                </h2>
-            </div>
+				<!-- Heading -->
+				<h2
+					class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight"
+				>
+					Pertanyaan Umum
+				</h2>
+			</div>
 
-            <div class="max-w-5xl mx-auto space-y-6">
-                <!-- FAQ Cards -->
-                <div class="grid gap-6">
-                    <div
-                        class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
+			<div class="max-w-5xl mx-auto space-y-6">
+				<!-- FAQ Cards -->
+				<div class="grid gap-6">
+					<div
+						class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+					>
+						<!-- Baris atas: judul + tanggal -->
+						<div class="flex justify-between items-start">
+							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+								Bagaimana cara mendaftar di VirtuClass?
+							</h3>
+							<div class="flex justify-between items-center mt-2">
+								<span></span>
+								<!-- untuk menjaga jarak kiri -->
+								<span
+									class="faq-icons text-xl transform transition-transform duration-300"
+									>▼</span
+								>
+							</div>
+						</div>
 
-                        <!-- Baris atas: judul + tanggal -->
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                                Bagaimana cara mendaftar di webinar?
-                            </h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span></span> <!-- untuk menjaga jarak kiri -->
-                                <span class="faq-icons text-xl transform transition-transform duration-300">▼</span>
-                            </div>
+						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+							<ul class="list-disc list-inside">
+								<li>
+									Silahkan mengunjungi
+									<a
+										href="https://www.s.id/webinarhafecs"
+										target="_blank"
+										class="text-blue-600"
+										>s.id/webinarhafecs</a
+									>
+									untuk melihat daftar VirtuClass yang akan diselenggarakan.
+									Kemudian klik VirtuClass yang Anda Inginkan, lalu muncul
+									formulir pendaftaran yang perlu Anda isi.
+								</li>
+							</ul>
+						</div>
+					</div>
 
-                        </div>
+					<div
+						class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+					>
+						<!-- Baris atas: judul + tanggal -->
+						<div class="flex justify-between items-start">
+							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+								Apakah boleh untuk mengadakan pelatihan berikut secara langsung
+								di sekolah kami?
+							</h3>
+							<div class="flex justify-between items-center mt-2">
+								<span></span>
+								<!-- untuk menjaga jarak kiri -->
+								<span
+									class="faq-icons text-xl transform transition-transform duration-300"
+									>▼</span
+								>
+							</div>
+						</div>
 
-                        <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
-                            <ul class="list-disc list-inside">
-                                <li>Silahkan mengunjungi <a href="https://www.s.id/webinarhafecs" target="_blank"
-                                        class="text-blue-600">s.id/webinarhafecs</a> untuk
-                                    melihat daftar webinar yang akan
-                                    diselenggarakan. Kemudian klik webinar
-                                    yang Anda Inginkan, lalu muncul formulir pendaftaran yang perlu Anda isi.</li>
-                            </ul>
-                        </div>
-                    </div>
+						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+							<ul class="list-disc list-inside">
+								<li>
+									Jika ingin mengadakan pelatihan di sekolah Anda, silahkan
+									menghubungi kami di WhatsApp
+									<a
+										href="https://wa.me/6285216164164"
+										target="_blank"
+										class="text-blue-600"
+										>6285216164164</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+					>
+						<!-- Baris atas: judul + tanggal -->
+						<div class="flex justify-between items-start">
+							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+								Berapa JP yang kami dapatkan?
+							</h3>
+							<div class="flex justify-between items-center mt-2">
+								<span></span>
+								<!-- untuk menjaga jarak kiri -->
+								<span
+									class="faq-icons text-xl transform transition-transform duration-300"
+									>▼</span
+								>
+							</div>
+						</div>
 
-                    <div
-                        class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
+						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+							<ul class="list-disc list-inside">
+								<li>VirtuClass Premium HAFECS akan mendapatkan 20 JP</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+					>
+						<!-- Baris atas: judul + tanggal -->
+						<div class="flex justify-between items-start">
+							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+								Apakah HAFECS memiliki Produk lain selain VirtuClass?
+							</h3>
+							<div class="flex justify-between items-center mt-2">
+								<span></span>
+								<!-- untuk menjaga jarak kiri -->
+								<span
+									class="faq-icons text-xl transform transition-transform duration-300"
+									>▼</span
+								>
+							</div>
+						</div>
 
-                        <!-- Baris atas: judul + tanggal -->
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                                Apakah boleh untuk mengadakan pelatihan berikut secara langsung di sekolah kami?
-                            </h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span></span> <!-- untuk menjaga jarak kiri -->
-                                <span class="faq-icons text-xl transform transition-transform duration-300">▼</span>
-                            </div>
+						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+							<ul class="list-disc list-inside">
+								<li>
+									Kami memiliki produk lain seperti modul, Buku, dan In House
+									Training. Informasi lebih lanjut silahkan kunjungi hafecs.id
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div
+						class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+					>
+						<!-- Baris atas: judul + tanggal -->
+						<div class="flex justify-between items-start">
+							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+								Contact Person HAFECS
+							</h3>
+							<div class="flex justify-between items-center mt-2">
+								<span></span>
+								<!-- untuk menjaga jarak kiri -->
+								<span
+									class="faq-icons text-xl transform transition-transform duration-300"
+									>▼</span
+								>
+							</div>
+						</div>
 
-                        </div>
+						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+							<ul class="list-disc list-inside">
+								<li>
+									Anda bisa menghubungi kami melalui WhatsApp
+									<a
+										href="https://wa.me/6282366447772"
+										target="_blank"
+										class="text-blue-600"
+										>6285216164164</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
 
-                        <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
-                            <ul class="list-disc list-inside">
-                                <li>Jika ingin mengadakan pelatihan di sekolah Anda, silahkan menghubungi kami di
-                                    WhatsApp <a href="https://wa.me/6285216164164" target="_blank"
-                                        class="text-blue-600">6285216164164</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
+					<!-- End Project Item Template -->
+					<!-- Repeat with Project 2, 3, 4 as needed (you can duplicate and change the titles/links) -->
+				</div>
+			</div>
 
-                        <!-- Baris atas: judul + tanggal -->
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                                Berapa JP yang kami dapatkan?
-                            </h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span></span> <!-- untuk menjaga jarak kiri -->
-                                <span class="faq-icons text-xl transform transition-transform duration-300">▼</span>
-                            </div>
+			<!-- FAQ Toggle Script -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const items = document.querySelectorAll(".faq-items");
 
-                        </div>
+					items.forEach((item) => {
+						item.addEventListener("click", function () {
+							const answer = this.querySelector(".faq-answers");
+							const icon = this.querySelector(".faq-icons");
 
-                        <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
-                            <ul class="list-disc list-inside">
-                                <li>Webinar Premium HAFECS akan mendapatkan 20 JP</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
+							// Hide other open answers
+							document.querySelectorAll(".faq-answers").forEach((a) => {
+								if (a !== answer) a.classList.add("hidden");
+							});
+							document.querySelectorAll(".faq-icons").forEach((i) => {
+								if (i !== icon) i.classList.remove("rotate-180");
+							});
 
-                        <!-- Baris atas: judul + tanggal -->
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                                Apakah HAFECS memiliki Produk lain selain webinar?
-                            </h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span></span> <!-- untuk menjaga jarak kiri -->
-                                <span class="faq-icons text-xl transform transition-transform duration-300">▼</span>
-                            </div>
-
-                        </div>
-
-                        <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
-                            <ul class="list-disc list-inside">
-                                <li>Kami memiliki produk lain seperti modul, Buku, dan In House Training. Informasi
-                                    lebih lanjut silahkan kunjungi hafecs.id</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div
-                        class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100">
-
-                        <!-- Baris atas: judul + tanggal -->
-                        <div class="flex justify-between items-start">
-                            <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-                                Contact Person HAFECS
-                            </h3>
-                            <div class="flex justify-between items-center mt-2">
-                                <span></span> <!-- untuk menjaga jarak kiri -->
-                                <span class="faq-icons text-xl transform transition-transform duration-300">▼</span>
-                            </div>
-
-                        </div>
-
-                        <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
-                            <ul class="list-disc list-inside">
-                                <li>Anda bisa menghubungi kami melalui WhatsApp <a href="https://wa.me/6282366447772"
-                                        target="_blank" class="text-blue-600">6285216164164</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    <!-- End Project Item Template -->
-                    <!-- Repeat with Project 2, 3, 4 as needed (you can duplicate and change the titles/links) -->
-                </div>
-            </div>
-
-            <!-- FAQ Toggle Script -->
-            <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                    const items = document.querySelectorAll(".faq-items");
-
-                    items.forEach(item => {
-                        item.addEventListener("click", function () {
-                            const answer = this.querySelector(".faq-answers");
-                            const icon = this.querySelector(".faq-icons");
-
-                            // Hide other open answers
-                            document.querySelectorAll(".faq-answers").forEach(a => {
-                                if (a !== answer) a.classList.add("hidden");
-                            });
-                            document.querySelectorAll(".faq-icons").forEach(i => {
-                                if (i !== icon) i.classList.remove("rotate-180");
-                            });
-
-                            // Toggle current
-                            answer.classList.toggle("hidden");
-                            icon.classList.toggle("rotate-180");
-                        });
-                    });
-                });
-            </script>
-
-
-
-
-        </section>
+							// Toggle current
+							answer.classList.toggle("hidden");
+							icon.classList.toggle("rotate-180");
+						});
+					});
+				});
+			</script>
+		</section>
 
 		<!-- End Review Alumni -->
 
@@ -2386,10 +2088,10 @@ Pembicara konferensi internasional, di antaranya:
 						<h2
 							class="text-2xl font-bold mb-4 pb-3 border-b-2 border-orange-400 inline-block"
 						>
-							Webinar HAFECS
+							VirtuClass HAFECS
 						</h2>
 						<p class="text-gray-300 leading-relaxed mb-6">
-							Webinar untuk memberdayakan pendidik dengan pengetahuan dan
+							VirtuClass untuk memberdayakan pendidik dengan pengetahuan dan
 							keterampilan mengajar yang efektif.
 						</p>
 					</div>
@@ -2414,7 +2116,7 @@ Pembicara konferensi internasional, di antaranya:
 											<i
 												class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
 											></i>
-											Tentang Webinar
+											Tentang VirtuClass
 										</span>
 									</a>
 								</li>
@@ -2429,7 +2131,7 @@ Pembicara konferensi internasional, di antaranya:
 											<i
 												class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
 											></i>
-											Mentor
+											Trainer
 										</span>
 									</a>
 								</li>
@@ -2487,15 +2189,15 @@ Pembicara konferensi internasional, di antaranya:
 								</span>
 							</li>
 							<li class="flex items-center md:justify-end group">
-								<i
-									class="fas fa-envelope text-orange-400 text-lg md:order-2 md:ml-3 group-hover:animate-bounce"
-								></i>
+								<!-- <i
+         class="fas fa-envelope text-orange-400 text-lg md:order-2 md:ml-3 group-hover:animate-bounce"
+        ></i> -->
 								<span
 									class="ml-3 md:ml-0 text-gray-300 hover:text-orange-400 transition-colors md:order-1"
 								>
-									<a href="mailto:info@webinarprogram.id"
-										>info@webinarprogram.id</a
-									>
+									<!-- <a href="mailto:info@webinarprogram.id"
+          >info@webinarprogram.id</a
+         > -->
 								</span>
 							</li>
 						</ul>
@@ -2506,7 +2208,7 @@ Pembicara konferensi internasional, di antaranya:
 					class="mt-16 pt-8 border-t border-gray-500 text-center text-gray-400 text-sm"
 				>
 					<div class="flex flex-col md:flex-row justify-between items-center">
-						<p>© 2025 Webinar HAFECS Program. All rights reserved.</p>
+						<p>© 2025 VirtuClass HAFECS Program. All rights reserved.</p>
 						<div class="mt-4 md:mt-0">
 							<a
 								href="#"
@@ -2531,147 +2233,759 @@ Pembicara konferensi internasional, di antaranya:
 			></script>
 		</footer>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const slider = document.getElementById('mentors-slider');
-                const prevButton = document.getElementById('prev-button');
-                const nextButton = document.getElementById('next-button');
-                const carouselContainer = document.getElementById('mentors-carousel');
-                const dotsContainer = document.getElementById('dots-container');
-                
-                // Get all slides
-                const slides = slider.querySelectorAll('div.flex-shrink-0');
-                const slideCount = slides.length;
-                
-                // Variables for the carousel
-                let currentIndex = 0;
-                let slidesToShow = 4; // Default for large screens
-                let slideWidth = 0;
-                let autoplayInterval;
-                const autoplayDelay = 2000; 
-                
-                // Create dots
-                for (let i = 0; i < Math.ceil(slideCount / slidesToShow); i++) {
-                    const dot = document.createElement('button');
-                    dot.classList.add('h-2', 'w-2', 'rounded-full', 'bg-gray-300', 'mx-1', 'transition-colors');
-                    dot.dataset.index = i;
-                    dot.addEventListener('click', () => {
-                        goToSlide(i * slidesToShow);
-                    });
-                    dotsContainer.appendChild(dot);
-                }
-                
-                // Update dots
-                function updateDots() {
-                    const dots = dotsContainer.querySelectorAll('button');
-                    const activeIndex = Math.floor(currentIndex / slidesToShow);
-                    
-                    dots.forEach((dot, index) => {
-                        if (index === activeIndex) {
-                            dot.classList.remove('bg-gray-300');
-                            dot.classList.add('bg-blue-800');
-                        } else {
-                            dot.classList.remove('bg-blue-800');
-                            dot.classList.add('bg-gray-300');
-                        }
-                    });
-                }
-                
-                // Function to update slidesToShow based on screen width
-                function updateSlidesToShow() {
-                    const width = window.innerWidth;
-                    
-                    if (width < 640) { // Mobile
-                        slidesToShow = 1;
-                    } else if (width < 768) { // Small tablet
-                        slidesToShow = 2;
-                    } else if (width < 1024) { // Tablet
-                        slidesToShow = 3;
-                    } else { // Desktop
-                        slidesToShow = 4;
-                    }
-                    
-                    updateSlideWidth();
-                    goToSlide(0); // Reset to first slide when resizing
-                    updateDots();
-                }
-                
-                // Calculate slide width based on container width and slidesToShow
-                function updateSlideWidth() {
-                    const containerWidth = carouselContainer.clientWidth;
-                    slideWidth = containerWidth / slidesToShow;
-                    
-                    // Set width for all slides
-                    slides.forEach(slide => {
-                        slide.style.width = `${slideWidth}px`;
-                    });
-                }
-                
-                // Go to specific slide
-                function goToSlide(index) {
-                    if (index < 0) {
-                        index = slideCount - slidesToShow;
-                    } else if (index > slideCount - slidesToShow) {
-                        index = 0;
-                    }
-                    
-                    currentIndex = index;
-                    const offset = -currentIndex * slideWidth;
-                    slider.style.transform = `translateX(${offset}px)`;
-                    updateDots();
-                }
-                
-                // Next slide function
-                function nextSlide() {
-                    goToSlide(currentIndex + slidesToShow);
-                }
-                
-                // Previous slide function
-                function prevSlide() {
-                    goToSlide(currentIndex - slidesToShow);
-                }
-                
-                // Start autoplay
-                function startAutoplay() {
-                    stopAutoplay(); // Clear any existing interval
-                    autoplayInterval = setInterval(nextSlide, autoplayDelay);
-                }
-                
-                // Stop autoplay
-                function stopAutoplay() {
-                    if (autoplayInterval) {
-                        clearInterval(autoplayInterval);
-                    }
-                }
-                
-                // Event listeners
-                nextButton.addEventListener('click', () => {
-                    nextSlide();
-                    stopAutoplay();
-                    startAutoplay();
-                });
-                
-                prevButton.addEventListener('click', () => {
-                    prevSlide();
-                    stopAutoplay();
-                    startAutoplay();
-                });
-                
-                // Pause autoplay on hover
-                carouselContainer.addEventListener('mouseenter', stopAutoplay);
-                carouselContainer.addEventListener('mouseleave', startAutoplay);
-                
-                // Handle window resize
-                window.addEventListener('resize', () => {
-                    updateSlidesToShow();
-                    stopAutoplay();
-                    startAutoplay();
-                });
-                
-                // Initialize carousel
-                updateSlidesToShow();
-                startAutoplay();
-            });
-        </script>
+		<!-- WEBINAR BUTTON -->
+		<!-- Tombol Buka Modal -->
+		<!-- <button
+			id="openModalBtn"
+			class="px-5 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center gap-2 font-medium"
+		>
+			<i data-feather="plus-circle" class="w-5 h-5"></i>
+			Lihat Daftar Webinar
+		</button> -->
+
+		<!-- Modal Overlay -->
+		<div
+			id="modalOverlay"
+			class="fixed inset-0 bg-black bg-opacity-50 z-40 flex items-center justify-center p-4 modal-transition modal-hidden"
+		>
+			<!-- Modal Container -->
+			<div
+				id="modalContainer"
+				class="bg-white rounded-xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-hidden flex flex-col"
+			>
+				<!-- Header -->
+				<div
+					class="bg-gradient-to-r from-blue-600 to-purple-600 p-6 text-white"
+				>
+					<div class="flex justify-between items-center">
+						<h2 class="text-2xl font-bold">Daftar VirtuClass Journey🔥</h2>
+						<button
+							id="closeModalBtn"
+							class="text-white hover:text-gray-200 transition-colors"
+						>
+							<i data-feather="x" class="w-6 h-6"></i>
+						</button>
+					</div>
+					<p class="mt-2 opacity-90">
+						Tingkatkan kompetensi mengajar dan strategi pembelajaran Anda
+						melalui VirtuClass bersama para ahli
+					</p>
+				</div>
+
+				<!-- Content -->
+				<div class="overflow-y-auto p-4 md:p-6">
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+						<!-- Webinar 1 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-blue-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Teknik dan Strategi Bertanya dalam Deep Learning
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										1
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>29 & 30 April 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Ubaidillah</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<span
+										class="w-full py-2 bg-gray-400 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+									>
+										<!-- <i data-feather="shopping-cart" class="w-4 h-4"></i> -->
+										VirtuClass Selesai
+									</span>
+									<!-- <button class="px-3 py-2 border border-blue-500 text-blue-500 rounded-md font-medium transition-colors hover:bg-blue-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 2 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-purple-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Praktikum Sains Inovatif Berbasis Permainan Edukatif
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										2
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>15 & 17 Mei 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Farida Hayati</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/j528j41vvdlx/checkout"
+										class="w-full py-2 bg-purple-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-purple-500 text-purple-500 rounded-md font-medium transition-colors hover:bg-purple-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 3 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-green-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Praktik & Simulasi Applied Behavior Therapy
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										3
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>26 & 27 Mei 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Iffah Rufaidah</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/qrjw0l5nvyog/checkout"
+										class="w-full py-2 bg-green-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-green-500 text-green-500 rounded-md font-medium transition-colors hover:bg-green-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 4 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-pink-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Strategi Pemilihan Reinforcement & Pembuatan Prioritas
+										Intervensi Perilaku
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										4
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>05 & 06 Juni 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>M.Mustain</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/jlyvzd95wlj1/checkout"
+										class="w-full py-2 bg-pink-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-pink-500 text-pink-500 rounded-md font-medium transition-colors hover:bg-pink-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 5 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-yellow-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Mendesain Pembelajaran Berbasis Deep Learning dengan
+										Pedagogical Content Knowledge (PCK)
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										5
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>16 & 17 Juni 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Taufik Hidayat</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/k9p1onmkpz8z/checkout"
+										class="w-full py-2 bg-yellow-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-yellow-500 text-yellow-600 rounded-md font-medium transition-colors hover:bg-yellow-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 6 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-red-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Merancang Modul Ajar & Desain Pembelajaran Berbantuan AI
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										6
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>25 & 26 Juni 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Danang Bagus Yudhistira</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/3e2m72z6oo7x/checkout"
+										class="w-full py-2 bg-red-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-red-500 text-red-500 rounded-md font-medium transition-colors hover:bg-red-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 7 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-indigo-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Praktik dan Simulasi Coding untuk Anak
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										7
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>07 & 08 Juli 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Mr. Singgih</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/3x2ek24lype9/checkout"
+										class="w-full py-2 bg-indigo-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-indigo-500 text-indigo-500 rounded-md font-medium transition-colors hover:bg-indigo-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+
+						<!-- Webinar 8 -->
+						<div
+							class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all card-hover flex flex-col h-full"
+						>
+							<div class="bg-teal-500 h-2"></div>
+							<div class="p-4 flex flex-col flex-grow">
+								<div class="flex justify-between items-start">
+									<h3 class="font-bold text-lg text-gray-800">
+										Membedah Rahasia Pembelajaran Coding
+									</h3>
+									<span
+										class="bg-gray-100 text-gray-600 rounded-full h-6 w-6 flex items-center justify-center text-xs font-medium"
+									>
+										8
+									</span>
+								</div>
+
+								<div class="mt-3 space-y-2">
+									<div class="flex items-center text-gray-600">
+										<i data-feather="calendar" class="w-4 h-4 mr-2"></i>
+										<span>17 & 18 Juli 2025</span>
+									</div>
+									<div class="flex items-center text-gray-600">
+										<i data-feather="user" class="w-4 h-4 mr-2"></i>
+										<span>Hamas Akif Sanie</span>
+									</div>
+								</div>
+
+								<div class="mt-auto pt-4 flex gap-2">
+									<a
+										href="https://lynk.id/hafecs/v1wkjw7y09lm/checkout"
+										class="w-full py-2 bg-teal-500 text-white rounded-md font-medium transition-colors hover:opacity-90 focus:ring-2 focus:ring-offset-2 focus:outline-none flex justify-center items-center gap-1"
+										target="_blank"
+									>
+										<i data-feather="shopping-cart" class="w-4 h-4"></i>
+										Beli Webinar
+									</a>
+									<!-- <button class="px-3 py-2 border border-teal-500 text-teal-500 rounded-md font-medium transition-colors hover:bg-teal-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:outline-none">
+                                        <i data-feather="info" class="w-4 h-4"></i>
+                                    </button> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer -->
+				<!-- <div class="border-t p-4 bg-gray-50 text-center">
+                    <p class="text-gray-600 text-sm">Daftar sekarang dan dapatkan sertifikat resmi</p>
+                    <div class="mt-2 flex justify-center gap-3">
+                        <div class="hidden lg:flex lg:items-center">
+                            <div class="promo-container relative overflow-hidden rounded-lg shadow-lg">
+                                <div class="absolute inset-0 bg-gradient-to-r from-yellow-300 to-yellow-400 animate-pulse-slow">
+                                </div>
+                                <span id="promo-code"
+                                    class="relative cursor-pointer text-xs font-bold bg-yellow-300 text-gray-800 px-3 py-1.5 rounded-md hover:bg-yellow-400 transition-all duration-200 flex items-center"
+                                    onclick="copyPromoCode()">
+                                    <span class="animate-bounce inline-block mr-1">🎁</span>
+                                    <strong>Promo Code untuk 50 orang Pertama: EARLYBIRD49%</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#faq" class="text-blue-600 hover:underline text-sm flex items-center gap-1" id="closeModalBtn">
+                            <i data-feather="help-circle" class="w-4 h-4"></i> FAQ
+                        </a>
+                        <a href="#" class="text-blue-600 hover:underline text-sm flex items-center gap-1">
+                            <i data-feather="info" class="w-4 h-4"></i> Syarat & Ketentuan
+                        </a>
+                    </div>
+                </div> -->
+			</div>
+		</div>
+
+		<script>
+			// Inisialisasi Feather Icons
+			document.addEventListener("DOMContentLoaded", () => {
+				feather.replace();
+			});
+
+			// Selectors
+			const openModalBtn = document.getElementById("openModalBtn");
+			const closeModalBtn = document.getElementById("closeModalBtn");
+			const modalOverlay = document.getElementById("modalOverlay");
+
+			// Handle Modal Open/Close
+			openModalBtn.addEventListener("click", () => {
+				modalOverlay.classList.remove("modal-hidden");
+				modalOverlay.classList.add("modal-visible");
+				// Re-render icons after DOM update
+				setTimeout(() => feather.replace(), 10);
+			});
+
+			closeModalBtn.addEventListener("click", () => {
+				modalOverlay.classList.remove("modal-visible");
+				modalOverlay.classList.add("modal-hidden");
+			});
+
+			// Close on outside click
+			modalOverlay.addEventListener("click", (e) => {
+				if (e.target === modalOverlay) {
+					modalOverlay.classList.remove("modal-visible");
+					modalOverlay.classList.add("modal-hidden");
+				}
+			});
+
+			// Buy webinar function
+			const buyWebinarButtons = document.querySelectorAll('a[href="#"]');
+			buyWebinarButtons.forEach((button, index) => {
+				button.addEventListener("click", (e) => {
+					e.preventDefault();
+					alert(`Anda membeli webinar #${index + 1}`);
+				});
+			});
+		</script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const slider = document.getElementById("mentors-slider");
+				const prevButton = document.getElementById("prev-button");
+				const nextButton = document.getElementById("next-button");
+				const carouselContainer = document.getElementById("mentors-carousel");
+				const dotsContainer = document.getElementById("dots-container");
+
+				// Get all slides
+				const slides = slider.querySelectorAll("div.flex-shrink-0");
+				const slideCount = slides.length;
+
+				// Variables for the carousel
+				let currentIndex = 0;
+				let slidesToShow = 4; // Default for large screens
+				let slideWidth = 0;
+				let autoplayInterval;
+				const autoplayDelay = 5000;
+				let isMobile = false;
+
+				// Touch control variables
+				let startX, moveX, diffX;
+				let isDragging = false;
+
+				// Create dots
+				function createDots() {
+					// Clear existing dots first
+					dotsContainer.innerHTML = "";
+
+					for (let i = 0; i < Math.ceil(slideCount / slidesToShow); i++) {
+						const dot = document.createElement("button");
+						dot.classList.add(
+							"h-2",
+							"w-2",
+							"rounded-full",
+							"bg-gray-300",
+							"mx-1",
+							"transition-colors"
+						);
+						dot.dataset.index = i;
+						dot.addEventListener("click", () => {
+							goToSlide(i * slidesToShow);
+						});
+						dotsContainer.appendChild(dot);
+					}
+					updateDots();
+				}
+
+				// Update dots
+				function updateDots() {
+					const dots = dotsContainer.querySelectorAll("button");
+					const activeIndex = Math.floor(currentIndex / slidesToShow);
+
+					dots.forEach((dot, index) => {
+						if (index === activeIndex) {
+							dot.classList.remove("bg-gray-300");
+							dot.classList.add("bg-blue-800");
+						} else {
+							dot.classList.remove("bg-blue-800");
+							dot.classList.add("bg-gray-300");
+						}
+					});
+				}
+
+				// Stop autoplay
+				function stopAutoplay() {
+					if (autoplayInterval) {
+						clearInterval(autoplayInterval);
+						autoplayInterval = null;
+					}
+				}
+
+				// Function to update slidesToShow based on screen width
+				function updateSlidesToShow() {
+					const width = window.innerWidth;
+
+					if (width < 640) {
+						// Mobile
+						slidesToShow = 1;
+						isMobile = true;
+					} else if (width < 768) {
+						// Small tablet
+						slidesToShow = 2;
+						isMobile = false;
+					} else if (width < 1024) {
+						// Tablet
+						slidesToShow = 3;
+						isMobile = false;
+					} else {
+						// Desktop
+						slidesToShow = 4;
+						isMobile = false;
+					}
+
+					updateSlideWidth();
+					goToSlide(0); // Reset to first slide when resizing
+					createDots(); // Recreate dots as number might have changed
+
+					// Handle autoplay based on device type
+					manageAutoplay();
+				}
+
+				// Manage autoplay based on device
+				function manageAutoplay() {
+					stopAutoplay();
+					if (!isMobile) {
+						startAutoplay();
+					}
+				}
+
+				// Calculate slide width based on container width and slidesToShow
+				function updateSlideWidth() {
+					const containerWidth = carouselContainer.clientWidth;
+					slideWidth = containerWidth / slidesToShow;
+
+					// Set width for all slides
+					slides.forEach((slide) => {
+						slide.style.width = `${slideWidth}px`;
+					});
+				}
+
+				// Go to specific slide
+				function goToSlide(index) {
+					if (index < 0) {
+						index = slideCount - slidesToShow;
+					} else if (index > slideCount - slidesToShow) {
+						index = 0;
+					}
+
+					currentIndex = index;
+					const offset = -currentIndex * slideWidth;
+					slider.style.transform = `translateX(${offset}px)`;
+					slider.style.transition = "transform 0.3s ease";
+					updateDots();
+				}
+
+				// Next slide function
+				function nextSlide() {
+					goToSlide(currentIndex + slidesToShow);
+				}
+
+				// Previous slide function
+				function prevSlide() {
+					goToSlide(currentIndex - slidesToShow);
+				}
+
+				// Start autoplay
+				function startAutoplay() {
+					if (isMobile) return; // Don't start autoplay on mobile
+					stopAutoplay(); // Clear any existing interval
+					autoplayInterval = setInterval(nextSlide, autoplayDelay);
+				}
+
+				// Setup touch events for mobile swipe
+				function setupTouchEvents() {
+					// Touch start
+					slider.addEventListener(
+						"touchstart",
+						function (e) {
+							startX = e.touches[0].clientX;
+							isDragging = true;
+							slider.style.transition = "";
+						},
+						{
+							passive: true,
+						}
+					);
+
+					// Touch move
+					slider.addEventListener(
+						"touchmove",
+						function (e) {
+							if (!isDragging) return;
+							moveX = e.touches[0].clientX;
+							diffX = moveX - startX;
+
+							// Move slider with finger but limit movement
+							const currentOffset = -currentIndex * slideWidth;
+							const newOffset = currentOffset + diffX;
+							slider.style.transform = `translateX(${newOffset}px)`;
+						},
+						{
+							passive: true,
+						}
+					);
+
+					// Touch end
+					slider.addEventListener("touchend", function () {
+						if (!isDragging) return;
+						isDragging = false;
+						slider.style.transition = "transform 0.3s ease";
+
+						// Determine if should go to next or previous slide
+						if (diffX < -50) {
+							// Swipe left
+							nextSlide();
+						} else if (diffX > 50) {
+							// Swipe right
+							prevSlide();
+						} else {
+							// Return to current slide if swipe wasn't significant
+							goToSlide(currentIndex);
+						}
+
+						startX = null;
+						moveX = null;
+						diffX = null;
+					});
+				}
+
+				// Event listeners
+				nextButton.addEventListener("click", () => {
+					nextSlide();
+					stopAutoplay();
+					if (!isMobile) startAutoplay();
+				});
+
+				prevButton.addEventListener("click", () => {
+					prevSlide();
+					stopAutoplay();
+					if (!isMobile) startAutoplay();
+				});
+
+				// Pause autoplay on hover for non-mobile
+				carouselContainer.addEventListener("mouseenter", stopAutoplay);
+				carouselContainer.addEventListener("mouseleave", () => {
+					if (!isMobile) startAutoplay();
+				});
+
+				// Handle window resize
+				window.addEventListener("resize", () => {
+					updateSlidesToShow();
+				});
+
+				// Initialize carousel
+				updateSlidesToShow();
+				setupTouchEvents();
+			});
+		</script>
+
+		<script defer>
+			// Menampilkan popup setelah 2 detik website dibuka
+			document.addEventListener("DOMContentLoaded", function () {
+				setTimeout(function () {
+					document
+						.getElementById("promoPopup")
+						.classList.remove("popup-hidden");
+				}, 4000);
+			});
+
+			// Menutup popup
+			document
+				.getElementById("closePopup")
+				.addEventListener("click", function () {
+					document.getElementById("promoPopup").classList.add("popup-hidden");
+				});
+
+			// document.getElementById('registerButton').addEventListener('click', function() {
+			//   Di sini bisa ditambahkan logika untuk mengarahkan ke halaman pendaftaran
+			//   alert('Mengarahkan ke halaman pendaftaran webinar...');
+			//   document.getElementById('promoPopup').classList.add('popup-hidden');
+			// });
+
+			// Menyalin kode promo
+			document
+				.getElementById("copyButton")
+				.addEventListener("click", function () {
+					const promoCode = "EARLYBIRD49%";
+
+					// Membuat elemen temporary untuk menyalin teks
+					const tempInput = document.createElement("input");
+					tempInput.value = promoCode;
+					document.body.appendChild(tempInput);
+					tempInput.select();
+					document.execCommand("copy");
+					document.body.removeChild(tempInput);
+
+					// Mengubah teks tombol
+					const copyButton = document.getElementById("copyButton");
+					copyButton.textContent = "Tersalin!";
+					copyButton.classList.add("copy-animation");
+
+					// Mengembalikan teks tombol setelah 2 detik
+					setTimeout(function () {
+						copyButton.textContent = "Salin";
+						copyButton.classList.remove("copy-animation");
+						document.getElementById("promoPopup").classList.add("popup-hidden");
+					}, 1000);
+				});
+		</script>
 	</body>
 </html>
