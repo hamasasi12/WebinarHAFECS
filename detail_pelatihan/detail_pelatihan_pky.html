@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+        name="description"
+        content="Strategi Pembelajaran HOTS di Era AI & Coding untuk pendidik dan profesional pendidikan. Dapatkan insight terbaru di bidang edukasi."
+    />
+    <meta
+        name="keywords"
+        content="Pembelajaran HOTS, pendidikan, pelatihan guru, AI dalam pendidikan, Higher Order Thinking Skills"
+    />
+    <meta name="author" content="HAFECS Team" />
+    <title>Mendidik Nalar di Era AI: Strategi Pembelajaran HOTS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        .prose {
+            max-width: 800px;
+            line-height: 1.8;
+        }
+        .prose h2 {
+            font-size: 1.75rem;
+            font-weight: bold;
+            margin-top: 2.5rem;
+            margin-bottom: 1.25rem;
+            color: #1e40af;
+        }
+        .prose h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #1e3a8a;
+        }
+        .highlight-box {
+            background-color: #f0f9ff;
+            border-left: 4px solid #3b82f6;
+            padding: 1.25rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .quote {
+            font-style: italic;
+            color: #4b5563;
+            border-left: 3px solid #9ca3af;
+            padding-left: 1.25rem;
+            margin: 1.5rem 0;
+        }
+        .image-container {
+            margin: 2rem 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .image-caption {
+            font-size: 0.875rem;
+            color: #6b7280;
+            margin-top: 0.5rem;
+        }
+        
+        /* Navbar styles */
+        .nav-link {
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #2563eb;
+            transition: width 0.3s ease;
+            box-shadow: 0 0 8px 1px rgba(37, 99, 235, 0.4);
+        }
+        .nav-link:hover .nav-underline {
+            width: 100%;
+        }
+        .nav-link:hover {
+            text-shadow: 0 0 5px rgba(37, 99, 235, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="mb-10">
+        <nav
+            class="fixed w-full z-20 top-0 start-0 bg-white shadow-md transition-all duration-300"
+        >
+            <div
+                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-6"
+            >
+                <!-- Animated Logo -->
+                <a
+                    href="#"
+                    class="flex items-center space-x-3 transition-transform duration-300 hover:scale-105 group ml-8 md:ml-12"
+                >
+                    <div class="overflow-hidden rounded-lg">
+                        <img
+                            src="../assets/icon/logo_hafecs.png"
+                            class="h-8 md:h-10 transition-all duration-500 group-hover:rotate-3"
+                            alt="Logo HAFECS"
+                            loading="lazy"
+                        />
+                    </div>
+                </a>
+
+                <!-- Animated Hamburger Menu Button -->
+                <button
+                    id="menu-toggle"
+                    class="lg:hidden text-blue-700 hover:text-blue-500 focus:outline-none transition-all duration-300 transform hover:rotate-180"
+                >
+                    <svg
+                        class="w-6 h-6"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"
+                        />
+                    </svg>
+                </button>
+
+                <!-- Centered Navigation Menu with Subtle Effect -->
+                <div
+                    class="hidden lg:flex lg:absolute lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:items-center lg:space-x-10 text-sm font-medium"
+                    id="menu"
+                >
+                    <a
+                        href="https://hafecs.id/"
+                        class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
+                        target="_blank"
+                    >
+                        Website HAFECS
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a
+                        href="https://elevate.hafecs.id/"
+                        class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
+                        target="_blank"
+                    >
+                        Elevate
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a
+                        href="#strategi"
+                        class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
+                    >
+                        Strategi
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a
+                        href="#peran-ai"
+                        class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
+                    >
+                        Peran AI
+                        <span class="nav-underline"></span>
+                    </a>
+                    <a
+                        href="#faq"
+                        class="nav-link text-gray-800 hover:text-blue-600 transition-all duration-200 relative px-2 py-1"
+                    >
+                        FAQ
+                        <span class="nav-underline"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Compact Mobile Menu with Animation -->
+            <div
+                id="mobile-menu"
+                class="hidden lg:hidden flex flex-col items-center space-y-2 py-3 bg-blue-600 border-t border-blue-200 text-xs font-medium transform transition-all duration-300 ease-in-out"
+            >
+                <a
+                    href="https://hafecs.id/"
+                    class="text-white hover:text-yellow-300 transition-all duration-200 py-1"
+                    target="_blank"
+                    >Website HAFECS</a
+                >
+                <a
+                    href="https://elevate.hafecs.id/"
+                    class="text-white hover:text-yellow-300 transition-all duration-200 py-1"
+                    target="_blank"
+                    >Elevate</a
+                >
+                <a
+                    href="#strategi"
+                    class="text-white hover:text-yellow-300 transition-all duration-200 py-1"
+                    >Strategi</a
+                >
+                <a
+                    href="#peran-ai"
+                    class="text-white hover:text-yellow-300 transition-all duration-200 py-1"
+                    >Peran AI</a
+                >
+                <a
+                    href="#faq"
+                    class="text-white hover:text-yellow-300 transition-all duration-200 py-1"
+                >
+                    FAQ
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Article Content -->
+    <main class="pb-10 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+
+            <!-- Featured Image -->
+            <div class="image-container px-6 pt-6">
+                <img src="../assets/img/galeri-11.jpg" 
+                     alt="Guru mengajar dengan teknologi">
+                <p class="image-caption">Sebanyak 18 orang peserta dari sejumlah sekolah yang ada di Palangka Raya, mengikuti pelatihan koding dan AI di SMAN 3 Palangka Raya, Senin (28/7/2025).</p>
+            </div>
+
+			 <!-- Article Header -->
+            <div class="text-center">
+                <h1 class="text-3xl md:text-4xl font-bold leading-tight">Pelatihan Koding dan AI bagi Guru Jenjang Dikmen Digelar di Palangka Raya</h1>
+               
+				<!--p class="mt-2 text-black-200 text-lg">Transformasi Pendidikan di Tengah Revolusi Teknologi Digital</p-->
+                
+                <div class="mt-6 flex flex-wrap justify-center items-center gap-2">
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Pendidikan</span>
+                    <span class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">Teknologi Pendidikan</span>
+                    <span class="text-black-100 text-sm">Oleh: Tim HAFECS | 4 Agustus 2025</span>
+                </div>
+            </div>
+
+            <!-- Article Body -->
+            <div class="prose px-6 py-6 mx-auto">
+                <p>Di era dimana Artificial Intelligence (AI) dan pemrograman menjadi literasi dasar, pendidik dihadapkan pada tantangan baru: bagaimana mengembangkan Higher Order Thinking Skills (HOTS) siswa yang tidak bisa digantikan oleh mesin. Artikel ini akan membahas strategi praktis untuk menerapkan pembelajaran HOTS di kelas dengan memanfaatkan teknologi terkini.</p>
+
+                <div class="highlight-box">
+                    <h3>Mengapa HOTS Penting di Era AI?</h3>
+                    <p>Menurut penelitian OECD (2024), 65% pekerjaan di masa depan akan membutuhkan keterampilan berpikir tingkat tinggi yang tidak dapat sepenuhnya diotomatisasi. Pembelajaran HOTS meliputi kemampuan menganalisis, mengevaluasi, dan mencipta - kompetensi yang justru semakin relevan di dunia yang dipenuhi teknologi.</p>
+                </div>
+
+                <h2 id="strategi">Strategi Implementasi HOTS di Kelas</h2>
+
+                <h3>1. Problem-Based Learning dengan Studi Kasus Nyata</h3>
+                <p>Guru dapat menyajikan masalah kompleks dari dunia nyata yang membutuhkan analisis mendalam. Contoh penerapannya:</p>
+                <ul>
+                    <li>Menganalisis dampak sosial media menggunakan data nyata dari platform</li>
+                    <li>Merancang solusi untuk masalah lingkungan di komunitas sekitar</li>
+                    <li>Membandingkan efektivitas berbagai algoritma untuk masalah tertentu</li>
+                </ul>
+
+                <div class="image-container">
+                    <img src="../assets/img/galeri-33.jpg" 
+                         alt="Siswa berdiskusi">
+                    <p class="image-caption">Diskusi kelompok mengasah kemampuan analisis siswa (Sumber: Unsplash)</p>
+                </div>
+
+                <h3>2. Integrasi Coding dalam Pembelajaran</h3>
+                <p>Pemrograman bukan lagi hanya untuk pelajaran komputer. Beberapa ide implementasi:</p>
+                <ul>
+                    <li>Matematika: Membuat visualisasi konsep geometri dengan Python</li>
+                    <li>Bahasa: Menganalisis pola bahasa dalam karya sastra menggunakan pemrosesan teks sederhana</li>
+                    <li>Sains: Simulasi percobaan fisika dengan JavaScript</li>
+                </ul>
+
+                <div class="quote">
+                    <p>"Coding adalah alat berpikir komputasional yang powerful untuk mengembangkan logika dan pemecahan masalah. Ini bukan tentang mencetak programmer, tapi membentuk pola pikir sistematis."</p>
+                    <p>- Prof. Singgih, Pakar Pendidikan Teknologi</p>
+                </div>
+
+                <h3>3. Pembelajaran Berbasis Proyek Kolaboratif</h3>
+                <p>Proyek lintas disiplin yang melibatkan:</p>
+                <ul>
+                    <li>Penelitian mandiri</li>
+                    <li>Prototyping solusi</li>
+                    <li>Presentasi hasil dengan dukungan multimedia</li>
+                    <li>Evaluasi teman sebaya (peer assessment)</li>
+                </ul>
+
+                <h2 id="peran-ai">Peran AI dalam Pembelajaran HOTS</h2>
+                <p>Daripada melihat AI sebagai ancaman, guru dapat memanfaatkannya sebagai:</p>
+                <ul>
+                    <li><strong>Asisten penelitian</strong>: Membantu siswa mengumpulkan dan menganalisis data</li>
+                    <li><strong>Alat evaluasi</strong>: Memberikan umpan balik instan pada latihan berpikir kritis</li>
+                    <li><strong>Simulator</strong>: Menciptakan skenario kompleks untuk analisis siswa</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h3>Contoh Aktivitas Kelas dengan AI</h3>
+                    <p><strong>Debat Virtual:</strong> Siswa berdebat dengan chatbot yang berperan sebagai ahli dengan sudut pandang berbeda, kemudian menganalisis argumen yang muncul.</p>
+                    <p><strong>Deteksi Bias:</strong> Menggunakan tools AI untuk menganalisis bias dalam berbagai sumber informasi sebagai bahan diskusi kritis.</p>
+                </div>
+
+                <h2>Kesimpulan</h2>
+                <p>Pendidikan di era AI bukan tentang bersaing dengan teknologi, tapi memanfaatkannya untuk mengembangkan kemampuan manusiawi yang unik: kreativitas, empati, dan berpikir kompleks. Dengan strategi yang tepat, guru dapat menciptakan pengalaman belajar yang mempersiapkan siswa untuk tantangan masa depan.</p>
+
+                <div class="mt-10 bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4">Ikuti VirtuClass HAFECS</h3>
+                    <p class="mb-4">Pelajari lebih dalam tentang strategi pembelajaran HOTS di era digital melalui program VirtuClass HAFECS:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Workshop interaktif dengan pakar pendidikan</li>
+                        <li>Praktik langsung mengintegrasikan teknologi dalam pembelajaran</li>
+                        <li>Jaringan komunitas pendidik progresif</li>
+                    </ul>
+                    <a href="https://elevate.hafecs.id" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+                        Daftar Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FAQ Section -->
+    <section class="w-full px-5 py-16 bg-gradient-to-r from-blue-50 via-blue-50 to-blue-100 text-gray-900" id="faq">
+        <div class="max-w-5xl mx-auto px-5 text-center py-12">
+            <!-- Tag -->
+            <div class="mb-2">
+                <span
+                    class="inline-flex items-center gap-2 bg-blue-500 text-white px-4 py-1 rounded-full text-xs font-semibold shadow-sm"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l9-5-9-5-9 5 9 5z"
+                        />
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.09 6.845L12 20l-6.25-2.577a12.083 12.083 0 01.09-6.845L12 14z"
+                        />
+                    </svg>
+                    FAQ
+                </span>
+            </div>
+
+            <!-- Heading -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight">
+                Pertanyaan Umum
+            </h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto space-y-6">
+            <!-- FAQ Cards -->
+            <div class="grid gap-6">
+                <div
+                    class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+                >
+                    <!-- Baris atas: judul + tanggal -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                            Bagaimana cara mendaftar di VirtuClass?
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span>
+                            <!-- untuk menjaga jarak kiri -->
+                            <span
+                                class="faq-icons text-xl transform transition-transform duration-300"
+                                >▼</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Silahkan mengunjungi
+                                <a
+                                    href="https://www.s.id/webinarhafecs"
+                                    target="_blank"
+                                    class="text-blue-600"
+                                    >s.id/webinarhafecs</a
+                                >
+                                untuk melihat daftar VirtuClass yang akan diselenggarakan.
+                                Kemudian klik VirtuClass yang Anda Inginkan, lalu muncul
+                                formulir pendaftaran yang perlu Anda isi.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div
+                    class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+                >
+                    <!-- Baris atas: judul + tanggal -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                            Apakah boleh untuk mengadakan pelatihan berikut secara langsung
+                            di sekolah kami?
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span>
+                            <!-- untuk menjaga jarak kiri -->
+                            <span
+                                class="faq-icons text-xl transform transition-transform duration-300"
+                                >▼</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Jika ingin mengadakan pelatihan di sekolah Anda, silahkan
+                                menghubungi kami di WhatsApp
+                                <a
+                                    href="https://wa.me/6285216164164"
+                                    target="_blank"
+                                    class="text-blue-600"
+                                    >6285216164164</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+                >
+                    <!-- Baris atas: judul + tanggal -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                            Berapa JP yang kami dapatkan?
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span>
+                            <!-- untuk menjaga jarak kiri -->
+                            <span
+                                class="faq-icons text-xl transform transition-transform duration-300"
+                                >▼</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside">
+                            <li>VirtuClass Premium HAFECS akan mendapatkan 20 JP</li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+                >
+                    <!-- Baris atas: judul + tanggal -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                            Apakah HAFECS memiliki Produk lain selain VirtuClass?
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span>
+                            <!-- untuk menjaga jarak kiri -->
+                            <span
+                                class="faq-icons text-xl transform transition-transform duration-300"
+                                >▼</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Kami memiliki produk lain seperti modul, Buku, dan In House
+                                Training. Informasi lebih lanjut silahkan kunjungi hafecs.id
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div
+                    class="faq-items bg-white p-6 border border-gray-200 rounded-xl cursor-pointer shadow-md transition duration-300 hover:bg-blue-100"
+                >
+                    <!-- Baris atas: judul + tanggal -->
+                    <div class="flex justify-between items-start">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-800">
+                            Contact Person HAFECS
+                        </h3>
+                        <div class="flex justify-between items-center mt-2">
+                            <span></span>
+                            <!-- untuk menjaga jarak kiri -->
+                            <span
+                                class="faq-icons text-xl transform transition-transform duration-300"
+                                >▼</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="faq-answers hidden text-sm text-gray-700 space-y-2">
+                        <ul class="list-disc list-inside">
+                            <li>
+                                Anda bisa menghubungi kami melalui WhatsApp
+                                <a
+                                    href="https://wa.me/6282366447772"
+                                    target="_blank"
+                                    class="text-blue-600"
+                                    >6285216164164</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0D3B66] text-white py-16 relative">
+        <!-- Accent Border Top -->
+        <div
+            class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500"
+        ></div>
+
+        <!-- Subtle Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div
+                class="w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNmMtMy4zMTQgMC02IDIuNjg2LTYgNnMyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNSIvPjxwYXRoIGQ9Ik0yNCAzNmMzLjMxNCAwIDYtMi42ODYgNi02cy0yLjY4Ni02LTYtNmMtMy4zMTQgMC02IDIuNjg2LTYgNnMyLjY4NiA2IDYgNnptMCAwIiBzdHJva2U9IiNmZmYiIHN0cm9rZS1vcGFjaXR5PSIuNSIvPjwvZz48L3N2Zz4=')]"
+            ></div>
+        </div>
+
+        <div class="container max-w-6xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Webinar HAFECS - Kiri -->
+                <div class="space-y-4">
+                    <h2
+                        class="text-2xl font-bold mb-4 pb-3 border-b-2 border-orange-400 inline-block"
+                    >
+                        VirtuClass HAFECS
+                    </h2>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        VirtuClass untuk memberdayakan pendidik dengan pengetahuan dan
+                        keterampilan mengajar yang efektif.
+                    </p>
+                </div>
+
+                <!-- Tautan Cepat - Tengah -->
+                <div class="md:flex md:justify-center">
+                    <div class="space-y-4">
+                        <h2
+                            class="text-2xl font-bold mb-4 pb-3 border-b-2 border-orange-400 inline-block"
+                        >
+                            Tautan Cepat
+                        </h2>
+                        <ul class="space-y-3">
+                            <li class="group">
+                                <a
+                                    href="#pendahuluan"
+                                    class="flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                                >
+                                    <span
+                                        class="transform group-hover:translate-x-2 transition-transform duration-200"
+                                    >
+                                        <i
+                                            class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
+                                        ></i>
+                                        Pendahuluan
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a
+                                    href="#strategi"
+                                    class="flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                                >
+                                    <span
+                                        class="transform group-hover:translate-x-2 transition-transform duration-200"
+                                    >
+                                        <i
+                                            class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
+                                        ></i>
+                                        Strategi Pembelajaran
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a
+                                    href="#peran-ai"
+                                    class="flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                                >
+                                    <span
+                                        class="transform group-hover:translate-x-2 transition-transform duration-200"
+                                    >
+                                        <i
+                                            class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
+                                        ></i>
+                                        Peran AI
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="group">
+                                <a
+                                    href="#faq"
+                                    class="flex items-center text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                                >
+                                    <span
+                                        class="transform group-hover:translate-x-2 transition-transform duration-200"
+                                    >
+                                        <i
+                                            class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
+                                        ></i>
+                                        FAQ
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kontak - Kanan -->
+                <div class="md:text-right space-y-4">
+                    <h2
+                        class="text-2xl font-bold mb-4 pb-3 border-b-2 border-orange-400 md:ml-auto md:inline-block"
+                    >
+                        Kontak
+                    </h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start md:justify-end group">
+                            <i
+                                class="fas fa-map-marker-alt text-orange-400 text-lg mt-1 md:order-2 md:ml-3 group-hover:animate-bounce"
+                            ></i>
+                            <span
+                                class="ml-3 md:ml-0 text-gray-300 md:text-right md:order-1"
+                            >
+                                JL. Brigjend. H. Hasan Basri KM 11, Ray 5, Kel. Handil Bakti,
+                                Kec. Alalak, Kab. Barito Kuala, Prov. Kalimantan Selatan
+                            </span>
+                        </li>
+                        <li class="flex items-center md:justify-end group">
+                            <i class="fas fa-phone-alt text-orange-400 text-lg md:order-2 md:ml-3"></i>
+                            <span class="ml-3 md:ml-0 text-gray-300 md:text-right md:order-1">
+                                (021) 12345678
+                            </span>
+                        </li>
+                        <li class="flex items-center md:justify-end group">
+                            <i class="fas fa-envelope text-orange-400 text-lg md:order-2 md:ml-3"></i>
+                            <span class="ml-3 md:ml-0 text-gray-300 md:text-right md:order-1">
+                                info@hafecs.id
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="mt-16 pt-8 border-t border-gray-500 text-center text-gray-400 text-sm"
+            >
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p>© 2025 VirtuClass HAFECS Program. All rights reserved.</p>
+                    <div class="mt-4 md:mt-0">
+                        <a
+                            href="#"
+                            class="text-gray-400 hover:text-orange-400 mx-2 transition-colors"
+                            >Kebijakan Privasi</a
+                        >
+                        <span class="mx-2">|</span>
+                        <a
+                            href="#"
+                            class="text-gray-400 hover:text-orange-400 mx-2 transition-colors"
+                            >Syarat & Ketentuan</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script>
+        // Navbar and Mobile Menu
+        document.addEventListener("DOMContentLoaded", function () {
+            // Mobile menu toggle with animation
+            const menuToggle = document.getElementById("menu-toggle");
+            const mobileMenu = document.getElementById("mobile-menu");
+
+            menuToggle.addEventListener("click", function () {
+                mobileMenu.classList.toggle("hidden");
+                this.classList.toggle("rotate-90");
+            });
+
+            // Scroll effect for navbar
+            window.addEventListener("scroll", function () {
+                const nav = document.querySelector("nav");
+                if (window.scrollY > 20) {
+                    nav.classList.add("shadow-lg");
+                } else {
+                    nav.classList.remove("shadow-lg");
+                }
+            });
+
+            // FAQ Toggle
+            const faqItems = document.querySelectorAll(".faq-items");
+            faqItems.forEach((item) => {
+                item.addEventListener("click", function () {
+                    const answer = this.querySelector(".faq-answers");
+                    const icon = this.querySelector(".faq-icons");
+
+                    // Hide other open answers
+                    document.querySelectorAll(".faq-answers").forEach((a) => {
+                        if (a !== answer) a.classList.add("hidden");
+                    });
+                    document.querySelectorAll(".faq-icons").forEach((i) => {
+                        if (i !== icon) i.classList.remove("rotate-180");
+                    });
+
+                    // Toggle current
+                    answer.classList.toggle("hidden");
+                    icon.classList.toggle("rotate-180");
+                });
+            });
+
+            // Initialize feather icons
+            feather.replace();
+        });
+    </script>
+</body>
+</html>
