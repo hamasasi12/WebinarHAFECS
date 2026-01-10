@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Ikuti VirtuClass eksklusif HAFECS untuk pendidik dan profesional pendidikan. Dapatkan sertifikasi, promo menarik, dan insight terbaru di bidang edukasi."
+			content="Ikuti ElevateClass eksklusif HAFECS untuk pendidik dan profesional pendidikan. Dapatkan sertifikasi, promo menarik, dan insight terbaru di bidang edukasi."
 		/>
 		<meta
 			name="keywords"
@@ -44,9 +44,10 @@
 						<div class="overflow-hidden rounded-lg">
 							<img
 								src="./assets/icon/logo_hafecs.png"
-								class="h-8 md:h-10 transition-all duration-500 group-hover:rotate-3"
+								class="transition-all duration-500 group-hover:rotate-3"
 								alt="Logo HAFECS"
-								loading="lazy"
+								width="150"
+								height="40"
 							/>
 						</div>
 					</a>
@@ -54,6 +55,7 @@
 					<!-- Animated Hamburger Menu Button -->
 					<button
 						id="menu-toggle"
+						aria-label="Toggle navigation menu"
 						class="lg:hidden text-blue-700 hover:text-blue-500 focus:outline-none transition-all duration-300 transform hover:rotate-180"
 					>
 						<svg
@@ -404,12 +406,15 @@
                         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
                         
 						<!-- Combined Image Hamas & Aulida -->
-						<img
-							src="./assets/img/hamas-aulida-crop.webp"
-							alt="Trainer Hamas Akif Sanie & Aulida Mardiari"
-							class="h-[85%] md:h-[90%] object-contain object-bottom z-10 transition-transform origin-bottom scale-[1.3] hover:scale-[1.31] duration-500"
-                            style="mask-image: linear-gradient(to bottom, black 85%, transparent 100%);"
-						/>
+							<img
+								src="./assets/img/hamas-aulida-crop.webp"
+								alt="Trainer Hamas Akif Sanie & Aulida Mardiari"
+								class="h-full w-full object-contain object-bottom transition-transform origin-bottom scale-[1.3] hover:scale-[1.31] duration-500"
+								style="mask-image: linear-gradient(to bottom, black 85%, transparent 100%);"
+                                width="600"
+                                height="500"
+                                fetchpriority="high"
+							/>
 					</div>
 				</div>
 
@@ -488,6 +493,9 @@
 									src="./assets/img/hamas.webp"
                                     alt="Hamas Akif Sanie"
 									class="h-[95%] w-full object-cover object-top"
+                                    width="128"
+                                    height="160"
+                                    loading="lazy"
 								/>
 							</div>
 							<div class="bg-[#00296b] text-white p-3 rounded-b-xl text-sm shadow-lg relative z-10 w-36 mx-auto -mt-1">
@@ -503,6 +511,9 @@
 									src="./assets/img/ms-aulida.webp"
                                     alt="Aulida Mardiari"
 									class="h-[95%] w-full object-cover object-top"
+                                    width="128"
+                                    height="160"
+                                    loading="lazy"
 								/>
 							</div>
 							<div class="bg-[#00296b] text-white p-3 rounded-b-xl text-sm shadow-lg relative z-10 w-36 mx-auto -mt-1">
@@ -649,17 +660,19 @@
 						<!-- Mentor 1 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-blue-800 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Master Trainer</span
 								>
 								<img
-									src="./assets/img/pak_zulfikar.png"
+									src="./assets/img/pak_zulfikar.webp"
 									alt="Dr. Zulfikar Alimuddin - Director of HAFECS"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Dr. Zulfikar Alimuddin
@@ -697,17 +710,19 @@
 						<!-- Mentor 1 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Trainer</span
 								>
 								<img
-									src="./assets/img/danang.jpg"
+									src="./assets/img/danang.webp"
 									alt="Danang Bagus Yudhistira - Deputy Director of HAFECS"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Danang Bagus Yudistira
@@ -743,17 +758,19 @@
 						<!-- Mentor 2 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Trainer</span
 								>
 								<img
-									src="./assets/img/yudistira.jpg"
+									src="./assets/img/yudistira.webp"
 									alt="Yudhistira Abdi Atmanegara"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Yudhistira Abdi Atmanegara
@@ -789,7 +806,7 @@
 
 						<!-- Mentor 3 -->
 						<!-- <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full">
+                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full">
                                 <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
                                 <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md" loading="lazy">
                                 <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
@@ -811,17 +828,19 @@
 						<!-- Mentor 4 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Trainer</span
 								>
 								<img
-									src="./assets/img/ubaid.jpg"
+									src="./assets/img/ubaid.webp"
 									alt="Ubaidillah"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
 								<p class="text-yellow-600 text-sm">
@@ -857,17 +876,19 @@
 						<!-- Mentor 4 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Trainer</span
 								>
 								<img
-									src="./assets/img/pak_taufiq.jpg"
+									src="./assets/img/pak_taufiq.webp"
 									alt="Taufik Hidayat"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Taufik Hidayat
@@ -900,7 +921,7 @@
 						<!-- Mentor 5 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
@@ -911,6 +932,8 @@
 									alt="Niken Roro Hapsari - Koordinator Calon Guru Muda Inovatif Indonesia"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Niken Roro Hapsari
@@ -946,17 +969,19 @@
 						<!-- Mentor 6 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
 							<div
-								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:scale-105 hover:shadow-lg cursor-pointer active:scale-95 h-full"
+								class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full"
 							>
 								<span
 									class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full"
 									>Trainer</span
 								>
 								<img
-									src="./assets/img/ms_aulida.png"
+									src="./assets/img/ms_aulida.webp"
 									alt="Aulida Mardiari"
 									class="w-full h-60 object-cover rounded-md"
 									loading="lazy"
+                                    width="300"
+                                    height="240"
 								/>
 								<h3 class="font-bold text-lg mt-3 text-blue-900">
 									Aulida Mardiari
@@ -1056,6 +1081,8 @@
 									alt="Pelatihan Jakarta"
 									class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500"
 									loading="lazy"
+                                    width="400"
+                                    height="320"
 								/>
 								<div
 									class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
@@ -1089,6 +1116,8 @@
 									alt="Pelatihan Yogyakarta"
 									class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500"
 									loading="lazy"
+                                    width="400"
+                                    height="320"
 								/>
 
 								<div
@@ -1124,6 +1153,8 @@
 									alt="Pelatihan Online"
 									class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500"
 									loading="lazy"
+                                    width="400"
+                                    height="320"
 								/>
 								<div
 									class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
@@ -1157,6 +1188,8 @@
 									alt="Konferensi Bali"
 									class="w-full h-64 sm:h-80 object-cover group-hover:scale-105 transition duration-500"
 									loading="lazy"
+                                    width="400"
+                                    height="320"
 								/>
 								<div
 									class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6"
@@ -2220,7 +2253,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Setelah mengikuti VirtuClass Series HAFECS, saya mendapatkan
+										Setelah mengikuti ElevateClass Series HAFECS, saya mendapatkan
 										banyak wawasan baru, khususnya dalam literasi, numerasi, dan
 										pendekatan pembelajaran berbasis teknologi. Materinya
 										aplikatif dan sangat membantu meningkatkan kualitas
@@ -2272,7 +2305,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Dari hasil mengikuti VirtuClass HAFECS, saya mendapatkan
+										Dari hasil mengikuti ElevateClass HAFECS, saya mendapatkan
 										banyak ilmu, pelajaran, dan teman-teman baru. Saya belajar
 										berbagai permainan edukatif yang memanfaatkan potensi diri,
 										menciptakan gerakan, lagu, dan tepuk tangan baru, membentuk
@@ -2323,7 +2356,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 										></path>
 									</svg>
 									<p class="text-gray-700 italic text-base pt-2 px-4">
-										Setelah mengikuti program VirtuClass, saya memiliki lebih
+										Setelah mengikuti program ElevateClass, saya memiliki lebih
 										banyak teknik dan strategi untuk membuat kelas saya lebih
 										interaktif. Saya juga mendapatkan jaringan profesional yang
 										luas dari sesama pendidik di seluruh Indonesia.
@@ -2387,7 +2420,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 						<!-- Baris atas: judul + tanggal -->
 						<div class="flex justify-between items-start">
 							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Bagaimana cara mendaftar di VirtuClass?
+								Bagaimana cara mendaftar Webinar HAFECS?
 							</h3>
 							<div class="flex justify-between items-center mt-2">
 								<span></span>
@@ -2402,16 +2435,14 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
 							<ul class="list-disc list-inside">
 								<li>
-									Silahkan mengunjungi
+									Anda dapat mendaftar dengan mengeklik tautan
 									<a
 										href="https://www.s.id/webinarhafecs"
 										target="_blank"
 										class="text-blue-600"
 										>s.id/webinarhafecs</a
 									>
-									untuk melihat daftar VirtuClass yang akan diselenggarakan.
-									Kemudian klik VirtuClass yang Anda Inginkan, lalu muncul
-									formulir pendaftaran yang perlu Anda isi.
+									Tautan tersebut akan langsung mengarahkan Anda ke laman pendaftaran kami.
 								</li>
 							</ul>
 						</div>
@@ -2471,7 +2502,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 
 						<div class="faq-answers hidden text-sm text-gray-700 space-y-2">
 							<ul class="list-disc list-inside">
-								<li>VirtuClass Premium HAFECS akan mendapatkan 20 JP</li>
+								<li>ElevateClass Premium HAFECS akan mendapatkan 20 JP</li>
 							</ul>
 						</div>
 					</div>
@@ -2481,7 +2512,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 						<!-- Baris atas: judul + tanggal -->
 						<div class="flex justify-between items-start">
 							<h3 class="text-lg sm:text-xl font-semibold text-gray-800">
-								Apakah HAFECS memiliki Produk lain selain VirtuClass?
+								Apakah HAFECS memiliki Produk lain selain ElevateClass?
 							</h3>
 							<div class="flex justify-between items-center mt-2">
 								<span></span>
@@ -2567,6 +2598,71 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 			</script>
 		</section>
 
+		<!-- What is HAFECS Section -->
+		<section class="py-16 bg-gradient-to-br from-blue-50 to-white relative overflow-hidden">
+			<!-- Decorative Background Elements -->
+			<div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+			<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+
+			<div class="container max-w-6xl mx-auto px-6 relative z-10">
+				<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+					<!-- Left Side: Banner Image -->
+					<div class="relative group">
+						<div class="relative rounded-2xl overflow-hidden shadow-xl aspect-video">
+							<img
+								src="assets/img/about-us.webp"
+								alt="Apa itu HAFECS?"
+								class="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+
+					<!-- Right Side: Content -->
+					<div class="space-y-6">
+						<div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-semibold text-sm tracking-wide mb-2">
+							TENTANG KAMI
+						</div>
+						
+						<h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
+							Apa itu <span class="text-blue-600">HAFECS?</span>
+						</h2>
+
+						<div class="prose prose-lg text-gray-600 text-justify">
+							<p>
+								<strong>Highly Functioning Education Consulting Services (HAFECS)</strong> adalah lembaga yang didedikasikan untuk memajukan kualitas pendidikan di Indonesia melalui pengembangan kompetensi guru dan tenaga pendidik.
+							</p>
+							<p>
+								Kami percaya bahwa kunci transformasi pendidikan terletak pada kualitas pengajaran. Oleh karena itu, HAFECS hadir dengan metode pelatihan inovatif yang menggabungkan teori pedagogi modern dengan praktik terbaik di lapangan, membantu sekolah dan pendidik mencapai potensi maksimal mereka.
+							</p>
+						</div>
+
+						<div class="pt-4">
+							<a href="https://hafecs.id/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-blue-600 font-bold hover:text-blue-800 transition-colors group">
+								Pelajari Lebih Lanjut
+								<i data-feather="arrow-right" class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"></i>
+							</a>
+						</div>
+
+						<!-- Stats/Highlights -->
+						<div class="grid grid-cols-3 gap-4 pt-6 mt-6 border-t border-gray-100">
+							<div class="text-center">
+								<div class="text-2xl font-bold text-blue-600">300K+</div>
+								<div class="text-xs text-gray-500 font-medium mt-1">PENDIDIK</div>
+							</div>
+							<div class="text-center">
+								<div class="text-2xl font-bold text-blue-600">450+</div>
+								<div class="text-xs text-gray-500 font-medium mt-1">KOTA</div>
+							</div>
+							<div class="text-center">
+								<div class="text-2xl font-bold text-blue-600">87%</div>
+								<div class="text-xs text-gray-500 font-medium mt-1">KEPUASAN</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
 		<!-- End Review Alumni -->
 
 		<footer class="bg-[#0D3B66] text-white py-16 relative">
@@ -2589,10 +2685,10 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 						<h2
 							class="text-2xl font-bold mb-4 pb-3 border-b-2 border-orange-400 inline-block"
 						>
-							VirtuClass HAFECS
+							ElevateClass HAFECS
 						</h2>
 						<p class="text-gray-300 leading-relaxed mb-6">
-							VirtuClass untuk memberdayakan pendidik dengan pengetahuan dan
+							ElevateClass untuk memberdayakan pendidik dengan pengetahuan dan
 							keterampilan mengajar yang efektif.
 						</p>
 					</div>
@@ -2617,7 +2713,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 											<i
 												class="fas fa-chevron-right mr-2 text-orange-400 text-sm"
 											></i>
-											Tentang VirtuClass
+											Tentang ElevateClass
 										</span>
 									</a>
 								</li>
@@ -2709,7 +2805,7 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 					class="mt-16 pt-8 border-t border-gray-500 text-center text-gray-400 text-sm"
 				>
 					<div class="flex flex-col md:flex-row justify-between items-center">
-						<p>© 2025 VirtuClass HAFECS Program. All rights reserved.</p>
+						<p>© 2025 ElevateClass HAFECS Program. All rights reserved.</p>
 						<div class="mt-4 md:mt-0">
 							<a
 								href="#"
