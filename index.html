@@ -379,35 +379,57 @@
 						class="md:w-1/2 space-y-6 z-10 pt-8 animate__animated animate__fadeInLeft"
 					>
 						<!-- Main Heading -->
-						<div class="space-y-4">
+						<div class="space-y-4" id="main-heading">
 							<h1
 								class="text-6xl md:text-7xl lg:text-8xl font-black text-blue-900 tracking-tight leading-[1.05]"
 							>
-								ELEVATE<br />CLASS<span class="text-blue-500">.</span><br/>
-								<span class="text-3xl md:text-5xl lg:text-6xl font-bold text-yellow-500 tracking-normal mt-2 block">EXCLUSIVE</span>
+								ELEVATE<br />CLASS<span class="text-blue-500">.</span><br />
+								<span
+									class="text-3xl md:text-5xl lg:text-6xl font-bold text-yellow-500 tracking-normal mt-2 block"
+									>EXCLUSIVE</span
+								>
 							</h1>
 							<div class="w-20 h-1.5 bg-blue-600 rounded-full"></div>
 						</div>
 
 						<div class="relative mt-6 max-w-xl">
 							<p
-								class="text-lg md:text-xl text-slate-600 font-medium leading-relaxed border-l-4 border-yellow-400 pl-5"
+								class="text-xs font-bold tracking-widest text-blue-500 uppercase mb-2"
+							>
+								🌟 HAFECS &amp; HASNUR CENTRE MEMPERSEMBAHKAN
+							</p>
+							<p
+								class="text-lg md:text-xl text-slate-700 font-semibold leading-relaxed border-l-4 border-yellow-400 pl-5"
 							>
 								"Dari Kelas dan Asrama ke Rumah:<br />
 								Membangun Lingkungan Inklusif untuk Semua Anak"
 							</p>
+							<p class="mt-3 text-sm text-slate-500 leading-relaxed pl-5">
+								Ini BUKAN webinar teori yang membosankan. Ini adalah
+								<strong>sesi bedah kasus dan strategi praktis</strong> bagaimana
+								membangun sistem inklusi yang nyata — dari ruang kelas, asrama,
+								hingga di rumah.
+							</p>
 						</div>
 
-						<!-- CTA Button -->
-						<div class="mt-10 relative z-50 flex gap-4 items-center">
+						<!-- CTA Buttons -->
+						<div class="mt-8 relative z-50 flex flex-wrap gap-3 items-center">
+							<a
+								href="https://s.id/Registrasi-EC-2026"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="inline-flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-black text-base py-3.5 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+							>
+								AMANKAN KURSI SAYA
+							</a>
 							<a
 								href="#fasilitas"
-								class="inline-flex items-center justify-center bg-blue-700 text-white font-medium text-base py-3.5 px-8 rounded-full shadow-sm hover:bg-blue-800 transition-colors duration-200 group"
+								class="inline-flex items-center justify-center bg-transparent border-2 border-blue-600 text-blue-700 hover:bg-blue-50 font-medium text-base py-3 px-6 rounded-full transition-colors duration-200"
 							>
 								Selengkapnya
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
-									class="h-5 w-5 ml-2 transform group-hover:translate-x-1 transition-transform"
+									class="h-4 w-4 ml-1"
 									fill="none"
 									viewBox="0 0 24 24"
 									stroke="currentColor"
@@ -425,7 +447,7 @@
 
 					<!-- Right Image (Hosts) -->
 					<div
-						class="md:w-1/2 flex justify-end relative h-[400px] md:h-[500px] w-full items-end mt-10 md:mt-0"
+						class="md:w-1/2 flex justify-end relative h-[400px] md:h-[500px] w-full items-end mt-10 md:mt-0 hidden sm:block"
 					>
 						<!-- Decorative backdrop -->
 						<div
@@ -446,10 +468,16 @@
 
 				<!-- Profiles -->
 				<div class="flex justify-center w-full mt-4">
-					<div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-4xl px-4 py-10">
+					<div
+						class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-4xl px-4 py-10"
+					>
 						<!-- Profile 1 -->
-						<div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch">
-							<div class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden">
+						<div
+							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch"
+						>
+							<div
+								class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden"
+							>
 								<img
 									src="./assets/img/ElevateClass/pak_ain.png"
 									alt="M. Mustain, S.Si."
@@ -459,15 +487,51 @@
 									loading="lazy"
 								/>
 							</div>
-							<div class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white">
-								<div class="inline-block px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold tracking-wide rounded-full mb-4 w-max mx-auto sm:mx-0">KEYNOTE SPEAKER</div>
-								<h3 class="text-xl md:text-2xl font-bold text-slate-800 leading-snug">M. Mustain, S.Si.</h3>
+							<div
+								class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white"
+							>
+								<div
+									class="inline-block px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold tracking-wide rounded-full mb-3 w-max mx-auto sm:mx-0"
+								>
+									KEYNOTE SPEAKER
+								</div>
+								<h3
+									class="text-xl md:text-2xl font-bold text-slate-800 leading-snug"
+								>
+									M. Mustain, S.Si.
+								</h3>
+								<ul class="mt-3 space-y-1.5 text-left">
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span
+											>Deputy Director of GIBS &amp; Principal of SMP GIBS</span
+										>
+									</li>
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span
+											>Special Needs Practitioner — Certified Basic Therapist in
+											ABA &amp; CBT Enthusiast</span
+										>
+									</li>
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span
+											>Punya <em>blueprint</em> nyata sistem inklusi di sekolah
+											skala besar</span
+										>
+									</li>
+								</ul>
 							</div>
 						</div>
 
 						<!-- Profile 2 -->
-						<div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch">
-							<div class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden">
+						<div
+							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch"
+						>
+							<div
+								class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden"
+							>
 								<img
 									src="./assets/img/ElevateClass/ms_rojihah.png"
 									alt="Rojihah, M.Psi., Psikolog."
@@ -477,9 +541,38 @@
 									loading="lazy"
 								/>
 							</div>
-							<div class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white">
-								<div class="inline-block px-3 py-1 bg-yellow-50 text-yellow-600 text-xs font-semibold tracking-wide rounded-full mb-4 w-max mx-auto sm:mx-0">NARASUMBER</div>
-								<h3 class="text-xl md:text-2xl font-bold text-slate-800 leading-snug">Rojihah, M.Psi., Psikolog.</h3>
+							<div
+								class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white"
+							>
+								<div
+									class="inline-block px-3 py-1 bg-yellow-50 text-yellow-600 text-xs font-semibold tracking-wide rounded-full mb-3 w-max mx-auto sm:mx-0"
+								>
+									NARASUMBER
+								</div>
+								<h3
+									class="text-xl md:text-2xl font-bold text-slate-800 leading-snug"
+								>
+									Rojihah, M.Psi., Psikolog.
+								</h3>
+								<ul class="mt-3 space-y-1.5 text-left">
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span
+											>Psikolog &amp; Head of Personal Development GIBS</span
+										>
+									</li>
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span>Certified in Inclusive Education</span>
+									</li>
+									<li class="flex items-start gap-2 text-sm text-slate-600">
+										<span class="text-green-500 mt-0.5 shrink-0">✔</span
+										><span
+											>Ahli desain intervensi psikologis tepat sasaran untuk
+											anak berkebutuhan khusus</span
+										>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -490,8 +583,9 @@
 					id="fasilitas"
 					class="mt-20 bg-slate-50/70 rounded-[2.5rem] p-8 md:p-12 border border-slate-100 scroll-mt-24 max-w-screen-xl mx-auto"
 				>
-					<div class="flex flex-col lg:flex-row items-stretch justify-between gap-8 md:gap-12">
-						
+					<div
+						class="flex flex-col lg:flex-row items-stretch justify-between gap-8 md:gap-12"
+					>
 						<!-- Left: Fasilitas List -->
 						<div class="w-full lg:w-1/3 flex flex-col">
 							<h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6">
@@ -502,32 +596,102 @@
 							>
 								<ul class="space-y-4 text-slate-600 font-medium">
 									<li class="flex items-center">
-										<div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4">
-											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+										<div
+											class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4"
+										>
+											<svg
+												class="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M5 13l4 4L19 7"
+												></path>
+											</svg>
 										</div>
 										E-Sertifikat (JP)
 									</li>
 									<li class="flex items-center">
-										<div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4">
-											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+										<div
+											class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4"
+										>
+											<svg
+												class="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M5 13l4 4L19 7"
+												></path>
+											</svg>
 										</div>
 										Ilmu Bermanfaat
 									</li>
 									<li class="flex items-center">
-										<div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4">
-											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+										<div
+											class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4"
+										>
+											<svg
+												class="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M5 13l4 4L19 7"
+												></path>
+											</svg>
 										</div>
 										Grup Diskusi & Relasi
 									</li>
 									<li class="flex items-center">
-										<div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4">
-											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+										<div
+											class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4"
+										>
+											<svg
+												class="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M5 13l4 4L19 7"
+												></path>
+											</svg>
 										</div>
 										Akses Rekaman Sesi
 									</li>
 									<li class="flex items-center">
-										<div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4">
-											<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+										<div
+											class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4"
+										>
+											<svg
+												class="w-4 h-4"
+												fill="none"
+												stroke="currentColor"
+												viewBox="0 0 24 24"
+											>
+												<path
+													stroke-linecap="round"
+													stroke-linejoin="round"
+													stroke-width="2"
+													d="M5 13l4 4L19 7"
+												></path>
+											</svg>
 										</div>
 										E-Modul
 									</li>
@@ -544,17 +708,35 @@
 								class="bg-blue-700 rounded-2xl p-8 md:p-10 shadow-xl flex-1 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden text-white"
 							>
 								<!-- decorative pattern -->
-								<div class="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-blue-600 rounded-full opacity-50 blur-3xl shadow-inner pointer-events-none"></div>
-								<div class="absolute bottom-0 left-0 -mb-16 -ml-16 w-48 h-48 bg-blue-800 rounded-full opacity-50 blur-2xl shadow-inner pointer-events-none"></div>
+								<div
+									class="absolute top-0 right-0 -mt-16 -mr-16 w-64 h-64 bg-blue-600 rounded-full opacity-50 blur-3xl shadow-inner pointer-events-none"
+								></div>
+								<div
+									class="absolute bottom-0 left-0 -mb-16 -ml-16 w-48 h-48 bg-blue-800 rounded-full opacity-50 blur-2xl shadow-inner pointer-events-none"
+								></div>
 
-								<div class="relative z-10 flex-1 space-y-4 text-center md:text-left">
-									<div class="inline-block px-4 py-1.5 bg-yellow-400 text-blue-900 text-sm font-bold tracking-wide rounded-full mb-2">AMAL DANA</div>
-									<h4 class="text-4xl lg:text-5xl font-extrabold tracking-tight">Seikhlasnya</h4>
-									<p class="text-blue-100 font-medium max-w-md mx-auto md:mx-0 opacity-90 leading-relaxed mt-2">
-										Tidak ada biaya pendaftaran standar. Seluruh sumbangan bersifat sukarela dan ditujukan untuk mendukung perluasan program inklusif kami.
+								<div
+									class="relative z-10 flex-1 space-y-4 text-center md:text-left"
+								>
+									<div
+										class="inline-block px-4 py-1.5 bg-yellow-400 text-blue-900 text-sm font-bold tracking-wide rounded-full mb-2"
+									>
+										AMAL DANA
+									</div>
+									<h4
+										class="text-4xl lg:text-5xl font-extrabold tracking-tight"
+									>
+										Seikhlasnya
+									</h4>
+									<p
+										class="text-blue-100 font-medium max-w-md mx-auto md:mx-0 opacity-90 leading-relaxed mt-2"
+									>
+										Tidak ada biaya pendaftaran standar. Seluruh sumbangan
+										bersifat sukarela dan ditujukan untuk mendukung perluasan
+										program inklusif kami.
 									</p>
 								</div>
-								
+
 								<div class="relative z-10 w-full md:w-auto">
 									<a
 										href="https://s.id/Registrasi-EC-2026"
@@ -572,6 +754,358 @@
 			</div>
 		</section>
 		<!-- End Beli Webiner -->
+
+		<!-- WARNING HOOK SECTION -->
+		<section
+			class="w-full bg-red-700 py-6 px-4 text-center relative overflow-hidden"
+		>
+			<div class="absolute inset-0 opacity-10 pointer-events-none">
+				<div
+					class="absolute -top-10 -left-10 w-48 h-48 bg-red-400 rounded-full"
+				></div>
+				<div
+					class="absolute -bottom-10 -right-10 w-64 h-64 bg-red-300 rounded-full"
+				></div>
+			</div>
+			<div class="max-w-4xl mx-auto relative z-10">
+				<p
+					class="text-yellow-300 font-black text-base sm:text-lg tracking-widest uppercase mb-2 animate-pulse"
+				>
+					⚠️ PERINGATAN KERAS UNTUK GURU, KEPSEK &amp; ORANG TUA ⚠️
+				</p>
+				<h2
+					class="text-white font-extrabold text-xl sm:text-2xl md:text-3xl leading-tight mb-4"
+				>
+					Berhenti Menyebut Lingkungan Anda
+					<span class="text-yellow-300">"Inklusif"</span
+					><br class="hidden sm:block" />
+					Jika Anda Masih Stres &amp; Kewalahan Menghadapi Anak Berperilaku
+					Khusus!
+				</h2>
+				<p
+					class="text-red-100 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed"
+				>
+					<strong class="text-yellow-300">Faktanya:</strong> Label "Inklusi"
+					tanpa skill psikologi terapan seperti ABA &amp; CBT hanya menghasilkan
+					guru yang <em>burnout</em> dan anak yang makin tertinggal.
+				</p>
+				<div class="mt-5">
+					<a
+						href="#pain-points"
+						class="inline-block bg-yellow-400 hover:bg-yellow-300 text-red-900 font-black text-sm sm:text-base px-8 py-3 rounded-full shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+					>
+						👉 SAYA INGIN TAHU RAHASIANYA 👈
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- END WARNING HOOK -->
+
+		<!-- PAIN POINTS SECTION -->
+
+		<section
+			id="pain-points"
+			class="py-16 px-4 bg-slate-900 text-white relative overflow-hidden"
+		>
+			<div class="absolute inset-0 opacity-5 pointer-events-none">
+				<div
+					class="absolute top-0 left-0 w-72 h-72 bg-blue-500 rounded-full blur-3xl"
+				></div>
+				<div
+					class="absolute bottom-0 right-0 w-80 h-80 bg-purple-500 rounded-full blur-3xl"
+				></div>
+			</div>
+			<div class="max-w-4xl mx-auto relative z-10">
+				<div class="text-center mb-12">
+					<p
+						class="text-yellow-400 font-black uppercase tracking-widest text-sm mb-3"
+					>
+						JIKA ANDA MENJAWAB "YA", ANDA TIDAK SENDIRIAN
+					</p>
+					<h2
+						class="text-2xl sm:text-3xl md:text-4xl font-extrabold leading-tight"
+					>
+						Jujur Saja, Apakah Anda Sering Merasakan Ini?
+					</h2>
+					<div class="w-20 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+				</div>
+
+				<div class="space-y-4 mb-12">
+					<div
+						class="flex items-start gap-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-all duration-200"
+					>
+						<span class="text-2xl shrink-0 mt-0.5">❌</span>
+						<p class="text-slate-200 leading-relaxed">
+							Bingung saat ada anak
+							<strong class="text-yellow-300"
+								>tantrum atau tidak fokus di kelas</strong
+							>, dan cara teguran biasa sama sekali tidak mempan?
+						</p>
+					</div>
+					<div
+						class="flex items-start gap-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-all duration-200"
+					>
+						<span class="text-2xl shrink-0 mt-0.5">❌</span>
+						<p class="text-slate-200 leading-relaxed">
+							Merasa program "Inklusi" di sekolah hanya sebatas
+							<strong class="text-yellow-300">menerima siswa</strong>, tapi guru
+							tidak dibekali alat ukur dan metode penanganan yang jelas?
+						</p>
+					</div>
+					<div
+						class="flex items-start gap-4 bg-white/5 hover:bg-white/10 border border-white/10 rounded-2xl p-5 transition-all duration-200"
+					>
+						<span class="text-2xl shrink-0 mt-0.5">❌</span>
+						<p class="text-slate-200 leading-relaxed">
+							Terjadi
+							<strong class="text-yellow-300"
+								>miss-komunikasi antara asrama/sekolah dengan orang tua</strong
+							>
+							di rumah, sehingga perkembangan anak tidak konsisten?
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="bg-blue-600/20 border border-blue-400/30 rounded-2xl p-6 sm:p-8 text-center"
+				>
+					<p
+						class="text-lg sm:text-xl font-semibold text-slate-100 leading-relaxed"
+					>
+						Pendidikan inklusif
+						<strong class="text-yellow-300">bukan sekadar niat baik.</strong
+						><br />
+						Dibutuhkan <strong class="text-white">strategi terukur</strong>,
+						bukan sekadar teori psikologi yang membingungkan.
+					</p>
+					<p class="mt-4 text-slate-300 text-sm">
+						Setiap hari Anda menunda belajar ilmu ini... ada anak yang potensi
+						terpendamnya gagal dimaksimalkan karena penanganan yang salah.
+					</p>
+					<!-- <a
+						href="https://s.id/Registrasi-EC-2026"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-block mt-6 bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-black text-base px-10 py-4 rounded-full shadow-xl transform hover:-translate-y-1 transition-all duration-200"
+					>
+						🖱️ KLIK DI SINI UNTUK AMANKAN KURSI ANDA
+					</a> -->
+				</div>
+			</div>
+		</section>
+		<!-- END PAIN POINTS -->
+
+		<!-- MENGAPA WAJIB MENDENGAR + COUNTDOWN -->
+		<section
+			class="py-16 px-4 bg-gradient-to-br from-blue-700 to-blue-900 text-white"
+		>
+			<div class="max-w-5xl mx-auto">
+				<div class="text-center mb-12">
+					<p
+						class="text-yellow-300 font-black uppercase tracking-widest text-sm mb-2"
+					>
+						MENGAPA ANDA WAJIB MENDENGAR DARI MEREKA?
+					</p>
+					<h2 class="text-2xl sm:text-3xl font-extrabold">
+						Karena mereka adalah
+						<span class="text-yellow-300">praktisi lapangan</span>, bukan
+						sekadar akademisi!
+					</h2>
+					<div class="w-16 h-1 bg-yellow-400 mx-auto mt-4 rounded-full"></div>
+					<p class="mt-4 text-blue-100 max-w-2xl mx-auto text-base">
+						Mereka tidak hanya berbicara teori — mereka telah membangun dan
+						menjalankan <strong>sistem inklusi nyata</strong> di sekolah asrama
+						skala besar. Apa yang akan Anda pelajari adalah hal yang sudah
+						terbukti bekerja.
+					</p>
+				</div>
+
+				<div
+					class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-3xl p-8 md:p-12"
+				>
+					<div class="text-center mb-8">
+						<span
+							class="inline-block bg-yellow-400 text-blue-900 text-xs font-black uppercase tracking-widest px-5 py-2 rounded-full mb-4"
+							>⚠️ KUOTA ZOOM SANGAT TERBATAS</span
+						>
+						<h3 class="text-xl sm:text-2xl font-bold text-white">
+							DAFTAR SEBELUM WAKTUNYA HABIS!
+						</h3>
+					</div>
+
+					<!-- Countdown Timer -->
+					<div
+						id="countdown"
+						class="grid grid-cols-4 gap-3 sm:gap-6 max-w-xl mx-auto mb-10"
+					>
+						<div class="text-center">
+							<div
+								class="bg-white/20 border border-white/30 rounded-2xl py-4 px-2"
+							>
+								<span
+									id="cd-days"
+									class="block text-3xl sm:text-4xl font-black text-yellow-300"
+									>00</span
+								>
+								<span
+									class="text-xs text-blue-100 uppercase tracking-widest mt-1 block"
+									>Hari</span
+								>
+							</div>
+						</div>
+						<div class="text-center">
+							<div
+								class="bg-white/20 border border-white/30 rounded-2xl py-4 px-2"
+							>
+								<span
+									id="cd-hours"
+									class="block text-3xl sm:text-4xl font-black text-yellow-300"
+									>00</span
+								>
+								<span
+									class="text-xs text-blue-100 uppercase tracking-widest mt-1 block"
+									>Jam</span
+								>
+							</div>
+						</div>
+						<div class="text-center">
+							<div
+								class="bg-white/20 border border-white/30 rounded-2xl py-4 px-2"
+							>
+								<span
+									id="cd-minutes"
+									class="block text-3xl sm:text-4xl font-black text-yellow-300"
+									>00</span
+								>
+								<span
+									class="text-xs text-blue-100 uppercase tracking-widest mt-1 block"
+									>Menit</span
+								>
+							</div>
+						</div>
+						<div class="text-center">
+							<div
+								class="bg-white/20 border border-white/30 rounded-2xl py-4 px-2"
+							>
+								<span
+									id="cd-seconds"
+									class="block text-3xl sm:text-4xl font-black text-yellow-300"
+									>00</span
+								>
+								<span
+									class="text-xs text-blue-100 uppercase tracking-widest mt-1 block"
+									>Detik</span
+								>
+							</div>
+						</div>
+					</div>
+
+					<!-- Event Details -->
+					<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mb-10">
+						<div
+							class="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl p-4"
+						>
+							<span class="text-2xl">📅</span>
+							<div>
+								<p
+									class="text-blue-200 text-xs uppercase tracking-wider font-semibold"
+								>
+									Hari / Tanggal
+								</p>
+								<p class="text-white font-bold text-sm">
+									Jum'at, 24 April 2026
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl p-4"
+						>
+							<span class="text-2xl">🕗</span>
+							<div>
+								<p
+									class="text-blue-200 text-xs uppercase tracking-wider font-semibold"
+								>
+									Waktu
+								</p>
+								<p class="text-white font-bold text-sm">
+									08.00 WIB / 09.00 WITA
+								</p>
+							</div>
+						</div>
+						<div
+							class="flex items-center gap-3 bg-white/10 border border-white/20 rounded-xl p-4"
+						>
+							<span class="text-2xl">💻</span>
+							<div>
+								<p
+									class="text-blue-200 text-xs uppercase tracking-wider font-semibold"
+								>
+									Tempat
+								</p>
+								<p class="text-white font-bold text-sm">
+									Zoom Meeting (Link khusus pendaftar)
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<p class="text-blue-100 text-sm mb-4">
+							👇 JANGAN LEWATKAN, DAFTAR SEKARANG! 👇
+						</p>
+						<a
+							href="https://s.id/Registrasi-EC-2026"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-black text-base sm:text-lg px-12 py-4 rounded-full shadow-2xl transform hover:-translate-y-1 transition-all duration-200"
+						>
+							🖱️ KLIK DI SINI UNTUK AMANKAN KURSI ANDA
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- COUNTDOWN SCRIPT -->
+		<script>
+			(function () {
+				// Target: April 24, 2026, 08:00 WIB (UTC+7)
+				var targetDate = new Date("2026-04-24T08:00:00+07:00").getTime();
+
+				function pad(n) {
+					return n < 10 ? "0" + n : "" + n;
+				}
+
+				function updateCountdown() {
+					var now = new Date().getTime();
+					var diff = targetDate - now;
+
+					if (diff <= 0) {
+						document.getElementById("cd-days").textContent = "00";
+						document.getElementById("cd-hours").textContent = "00";
+						document.getElementById("cd-minutes").textContent = "00";
+						document.getElementById("cd-seconds").textContent = "00";
+						return;
+					}
+
+					var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+					var hours = Math.floor(
+						(diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+					);
+					var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+					var seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+					document.getElementById("cd-days").textContent = pad(days);
+					document.getElementById("cd-hours").textContent = pad(hours);
+					document.getElementById("cd-minutes").textContent = pad(minutes);
+					document.getElementById("cd-seconds").textContent = pad(seconds);
+				}
+
+				updateCountdown();
+				setInterval(updateCountdown, 1000);
+			})();
+		</script>
+		<!-- END MENGAPA WAJIB + COUNTDOWN -->
 
 		<!-- MENTOR -->
 
