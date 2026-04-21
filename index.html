@@ -3,28 +3,99 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Primary Meta -->
+		<title>
+			ElevateClass HAFECS - Sertifikasi & Pelatihan Guru Profesional
+		</title>
 		<meta
 			name="description"
-			content="Ikuti ElevateClass eksklusif HAFECS untuk pendidik dan profesional pendidikan. Dapatkan sertifikasi, promo menarik, dan insight terbaru di bidang edukasi."
+			content="Ikuti ElevateClass HAFECS, program eksklusif sertifikasi dan pelatihan guru profesional. Tingkatkan kompetensi mengajar Anda dengan insight terbaru di bidang pendidikan."
 		/>
 		<meta
 			name="keywords"
-			content="ElevateClass HAFECS, sertifikasi guru, pendidikan, pelatihan guru, promo pendidikan, teaching and learning certification"
+			content="ElevateClass HAFECS, sertifikasi guru, pelatihan guru profesional, teaching and learning certification, kompetensi pendidik, promo pendidikan"
 		/>
 		<meta name="author" content="HAFECS Team" />
-		<title>ElevateClass HAFECS</title>
-		<script src="https://cdn.tailwindcss.com"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+		<meta name="robots" content="index, follow" />
+		<link rel="canonical" href="https://www.hafecs.id/elevateclass" />
+
+		<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+		<meta property="og:type" content="website" />
+		<meta
+			property="og:title"
+			content="ElevateClass HAFECS - Sertifikasi & Pelatihan Guru Profesional"
+		/>
+		<meta
+			property="og:description"
+			content="Program eksklusif sertifikasi dan pelatihan guru dari HAFECS. Dapatkan promo menarik dan insight terbaru di bidang pendidikan."
+		/>
+		<meta property="og:url" content="https://www.hafecs.id/elevateclass" />
+		<meta property="og:site_name" content="HAFECS" />
+		<meta
+			property="og:image"
+			content="https://www.hafecs.id/assets/og-elevateclass.jpg"
+		/>
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:locale" content="id_ID" />
+
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta
+			name="twitter:title"
+			content="ElevateClass HAFECS – Sertifikasi & Pelatihan Guru Profesional"
+		/>
+		<meta
+			name="twitter:description"
+			content="Program eksklusif sertifikasi dan pelatihan guru dari HAFECS. Dapatkan promo menarik dan insight terbaru di bidang pendidikan."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://www.hafecs.id/assets/og-elevateclass.jpg"
+		/>
+
+		<!-- Structured Data (JSON-LD) -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "EducationEvent",
+				"name": "ElevateClass HAFECS",
+				"description": "Program eksklusif sertifikasi dan pelatihan guru profesional dari HAFECS.",
+				"organizer": {
+					"@type": "Organization",
+					"name": "HAFECS",
+					"url": "https://www.hafecs.id"
+				},
+				"url": "https://www.hafecs.id/elevateclass",
+				"inLanguage": "id"
+			}
+		</script>
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			as="image"
+			href="./assets/icon/cropped-favicon.png"
+			type="image/png"
+			fetchpriority="high"
+		/>
+
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+		<!-- Stylesheets -->
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 		/>
 		<link href="output.css" rel="stylesheet" />
-		<link
-			rel="icon"
-			href="./assets/icon/cropped-favicon.png"
-			type="image/png"
-		/>
+		<link rel="preload" as="image" href="./assets/icon/logo_hafecs.png" fetchpriority="high">
+
+		<!-- Scripts (defer untuk performa) -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+			defer
+		></script>
 	</head>
 
 	<body>
@@ -381,22 +452,24 @@
 						<!-- Main Heading -->
 						<div class="space-y-4" id="main-heading">
 							<h1
-								class="text-6xl md:text-7xl lg:text-8xl font-black text-blue-900 tracking-tight leading-[1.05]"
+								class="text-4xl md:text-7xl lg:text-8xl font-black text-blue-900 tracking-tight leading-[1.05]"
 							>
-								ELEVATE<br />CLASS<span class="text-blue-500">.</span><br />
+								ELEVATE CLASS<span class="text-blue-500">.</span><br />
 								<span
 									class="text-3xl md:text-5xl lg:text-6xl font-bold text-yellow-500 tracking-normal mt-2 block"
 									>EXCLUSIVE</span
 								>
 							</h1>
-							<div class="w-20 h-1.5 bg-blue-600 rounded-full"></div>
+							<div
+								class="w-20 h-1.5 bg-blue-600 rounded-full hidden sm:block"
+							></div>
 						</div>
 
 						<div class="relative mt-6 max-w-xl">
 							<p
-								class="text-xs font-bold tracking-widest text-blue-500 uppercase mb-2"
+								class="text-xs font-bold tracking-widest text-blue-500 uppercase mb-2 hidden sm:block"
 							>
-								🌟 HAFECS &amp; HASNUR CENTRE MEMPERSEMBAHKAN
+								HAFECS &amp; YAYASAN HASNUR CENTRE MEMPERSEMBAHKAN
 							</p>
 							<p
 								class="text-lg md:text-xl text-slate-700 font-semibold leading-relaxed border-l-4 border-yellow-400 pl-5"
@@ -418,7 +491,7 @@
 								href="https://s.id/Registrasi-EC-2026"
 								target="_blank"
 								rel="noopener noreferrer"
-								class="inline-flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-black text-base py-3.5 px-8 rounded-full shadow-lg transform hover:-translate-y-1 transition-all duration-200"
+								class="inline-flex items-center justify-center bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-black text-base py-3.5 px-8 rounded-full shadow-lg transform transition-all duration-200"
 							>
 								AMANKAN KURSI SAYA
 							</a>
@@ -456,7 +529,7 @@
 
 						<!-- Combined Image Hamas & Aulida -->
 						<img
-							src="./assets/img/ElevateClass/double.png"
+							src="./assets/img/ElevateClass/double.webp"
 							alt="M. Mustain & Rojihah"
 							class="h-full w-full object-contain object-bottom scale-125 origin-bottom"
 							width="600"
@@ -467,56 +540,55 @@
 				</div>
 
 				<!-- Profiles -->
-				<div class="flex justify-center w-full mt-4">
+				<div class="flex justify-center w-full mt-4 border-t border-slate-200">
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 w-full max-w-4xl px-4 py-10"
+						class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 w-full max-w-6xl px-6 py-16"
 					>
-						<!-- Profile 1 -->
 						<div
-							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch"
+							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col lg:flex-row items-center lg:items-stretch"
 						>
 							<div
-								class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden"
+								class="h-72 w-full lg:w-64 shrink-0 bg-slate-50 relative flex items-end justify-center pt-8 overflow-hidden"
 							>
 								<img
-									src="./assets/img/ElevateClass/pak_ain.png"
+									src="./assets/img/ElevateClass/pak_ain.webp"
 									alt="M. Mustain, S.Si."
 									class="h-[95%] object-cover object-top"
-									width="192"
-									height="224"
+									width="256"
+									height="288"
 									loading="lazy"
 								/>
 							</div>
 							<div
-								class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white"
+								class="p-8 lg:p-10 flex flex-col justify-center text-center lg:text-left w-full bg-white"
 							>
 								<div
-									class="inline-block px-3 py-1 bg-blue-50 text-blue-600 text-xs font-semibold tracking-wide rounded-full mb-3 w-max mx-auto sm:mx-0"
+									class="inline-block px-4 py-1.5 bg-blue-50 text-blue-600 text-xs font-bold tracking-widest rounded-full mb-4 w-max mx-auto lg:mx-0 uppercase"
 								>
-									KEYNOTE SPEAKER
+									Keynote Speaker
 								</div>
 								<h3
-									class="text-xl md:text-2xl font-bold text-slate-800 leading-snug"
+									class="text-2xl md:text-3xl font-bold text-slate-800 leading-tight"
 								>
 									M. Mustain, S.Si.
 								</h3>
-								<ul class="mt-3 space-y-1.5 text-left">
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span
+								<ul class="mt-5 space-y-3 text-left">
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span
 											>Deputy Director of GIBS &amp; Principal of SMP GIBS</span
 										>
 									</li>
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span
 											>Special Needs Practitioner — Certified Basic Therapist in
 											ABA &amp; CBT Enthusiast</span
 										>
 									</li>
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span
 											>Punya <em>blueprint</em> nyata sistem inklusi di sekolah
 											skala besar</span
 										>
@@ -525,49 +597,48 @@
 							</div>
 						</div>
 
-						<!-- Profile 2 -->
 						<div
-							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col sm:flex-row items-center sm:items-stretch"
+							class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] transition-all duration-300 flex flex-col lg:flex-row items-center lg:items-stretch"
 						>
 							<div
-								class="h-56 w-full sm:w-48 shrink-0 bg-slate-50 relative flex items-end justify-center pt-6 overflow-hidden"
+								class="h-72 w-full lg:w-64 shrink-0 bg-slate-50 relative flex items-end justify-center pt-8 overflow-hidden"
 							>
 								<img
-									src="./assets/img/ElevateClass/ms_rojihah.png"
+									src="./assets/img/ElevateClass/ms_rojihah.webp"
 									alt="Rojihah, M.Psi., Psikolog."
 									class="h-[95%] object-cover object-top"
-									width="192"
-									height="224"
+									width="256"
+									height="288"
 									loading="lazy"
 								/>
 							</div>
 							<div
-								class="p-6 sm:p-8 flex flex-col justify-center text-center sm:text-left w-full bg-white"
+								class="p-8 lg:p-10 flex flex-col justify-center text-center lg:text-left w-full bg-white"
 							>
 								<div
-									class="inline-block px-3 py-1 bg-yellow-50 text-yellow-600 text-xs font-semibold tracking-wide rounded-full mb-3 w-max mx-auto sm:mx-0"
+									class="inline-block px-4 py-1.5 bg-yellow-50 text-yellow-600 text-xs font-bold tracking-widest rounded-full mb-4 w-max mx-auto lg:mx-0 uppercase"
 								>
-									NARASUMBER
+									Narasumber
 								</div>
 								<h3
-									class="text-xl md:text-2xl font-bold text-slate-800 leading-snug"
+									class="text-2xl md:text-3xl font-bold text-slate-800 leading-tight"
 								>
 									Rojihah, M.Psi., Psikolog.
 								</h3>
-								<ul class="mt-3 space-y-1.5 text-left">
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span
+								<ul class="mt-5 space-y-3 text-left">
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span
 											>Psikolog &amp; Head of Personal Development GIBS</span
 										>
 									</li>
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span>Certified in Inclusive Education</span>
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span>Certified in Inclusive Education</span>
 									</li>
-									<li class="flex items-start gap-2 text-sm text-slate-600">
-										<span class="text-green-500 mt-0.5 shrink-0">✔</span
-										><span
+									<li class="flex items-start gap-3 text-base text-slate-600">
+										<span class="text-green-500 mt-1 shrink-0">✔</span>
+										<span
 											>Ahli desain intervensi psikologis tepat sasaran untuk
 											anak berkebutuhan khusus</span
 										>
@@ -1111,17 +1182,6 @@
 
 		<section class="py-10 mt-4" id="mentor">
 			<div class="max-w-5xl mx-auto px-5 text-center py-4">
-				<!-- Tag -->
-				<!-- <div class="mb-2">
-                    <span class="inline-flex items-center gap-2 bg-yellow-400 text-gray-800 px-4 py-1 rounded-full text-xs font-bold shadow-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.09 6.845L12 20l-6.25-2.577a12.083 12.083 0 01.09-6.845L12 14z" />
-                        </svg>
-                        Our Mentor
-                    </span>
-                </div> -->
-
 				<!-- Heading -->
 				<h2
 					class="text-3xl sm:text-4xl font-extrabold text-blue-800 leading-tight"
@@ -1326,27 +1386,6 @@
 								</div>
 							</div>
 						</div>
-
-						<!-- Mentor 3 -->
-						<!-- <div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
-                            <div class="bg-white shadow-lg rounded-xl overflow-hidden text-left relative p-6 transform transition duration-300 hover:shadow-lg cursor-pointer active:scale-95 h-full">
-                                <span class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 text-xs font-semibold rounded-full">Trainer</span>
-                                <img src="./assets/img/ubaid.jpg" alt="Ubaidillah" class="w-full h-60 object-cover rounded-md" loading="lazy">
-                                <h3 class="font-bold text-lg mt-3 text-blue-900">Ubaidillah</h3>
-                                <p class="text-yellow-600 text-sm">Head of Curriculum and Content Development Department</p>
-                                <p class="text-gray-600 text-sm mt-2 text-justify">
-                                    Trainer dan guru pembelajar dengan pengalaman transformatif, aktif berkontribusi dalam
-                                    seminar, workshop, dan pelatihan bagi praktisi pendidikan. percaya bahwa pembelajaran
-                                    sepanjang hayat adalah kunci inovasi. Baginya,
-                                    <em>"menjadi lifelong learner adalah sebuah keharusan dan kunci inovasi."</em>
-                                </p>
-                                <div class="mt-3 flex flex-wrap gap-2">
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Teknologi Pendidikan</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">E-Learning</span>
-                                    <span class="bg-blue-100 text-blue-700 px-2 py-1 text-xs rounded-md">Media Pembelajaran Digital</span>
-                                </div>
-                            </div>
-                        </div> -->
 
 						<!-- Mentor 4 -->
 						<div class="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
@@ -3410,311 +3449,6 @@ Pelatihan ini dirancang sebagai model yang dapat direplikasi di daerah lain, den
 				</a>
 			</div>
 		</footer>
-
-		<!-- WEBINAR BUTTON -->
-		<!-- Tombol Buka Modal -->
-		<!-- <button
-			id="openModalBtn"
-			class="px-5 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition-colors flex items-center gap-2 font-medium"
-		>
-			<i data-feather="plus-circle" class="w-5 h-5"></i>
-			Lihat Daftar Webinar
-		</button> -->
-
-		<!-- Modal Overlay -->
-		<!-- <div
-			id="modalOverlay"
-			class="fixed inset-0 bg-black bg-opacity-50 z-40 flex items-center justify-center p-4 modal-transition modal-hidden"
-		>
-			<div
-				id="modalContainer"
-				class="bg-white rounded-xl shadow-2xl w-full max-w-5xl max-h-[90vh] overflow-hidden flex flex-col"
-			>
-				<div
-					class="bg-gradient-to-r from-blue-600 to-purple-600 p-6 text-white shrink-0"
-				>
-					<div class="flex justify-between items-center">
-						<div>
-							<h2 class="text-2xl font-bold">Detail Program Training</h2>
-							<p class="mt-1 opacity-90 text-sm">
-								Kurikulum komprehensif & benefit eksklusif untuk peserta
-							</p>
-						</div>
-						<button
-							id="closeModalBtn"
-							class="text-white hover:text-gray-200 transition-colors bg-white/10 hover:bg-white/20 rounded-full p-2"
-						>
-							<i data-feather="x" class="w-6 h-6"></i>
-						</button>
-					</div>
-				</div>
-
-				<div class="overflow-y-auto p-0 flex-grow">
-					<div class="flex flex-col lg:flex-row h-full">
-						<div class="w-full lg:w-2/3 p-6 lg:p-8 space-y-6">
-							<h3
-								class="text-xl font-bold text-gray-800 flex items-center gap-2 pb-4 border-b"
-							>
-								<i data-feather="book-open" class="w-5 h-5 text-blue-600"></i>
-								Kurikulum Program
-							</h3>
-
-							<div class="relative space-y-4">
-								<div
-									class="absolute left-4 top-2 bottom-2 w-0.5 bg-gray-200 -z-10"
-								></div>
-
-								<div class="flex items-center gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-green-100 border-2 border-green-500 flex items-center justify-center shrink-0 z-10"
-									>
-										<i data-feather="play" class="w-3 h-3 text-green-600"></i>
-									</div>
-									<div
-										class="bg-green-50 border border-green-200 rounded-lg p-3 w-full"
-									>
-										<span class="font-bold text-green-700 text-sm"
-											>📝 Pre-Test</span
-										>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										1
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul I</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Growth Mindset ala HAFECS untuk Resiliensi Budaya Belajar
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										2
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul II</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Konsep & Kerangka Pembelajaran Mendalam
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										3
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul III</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Strategi Pembelajaran Mendalam & Perbaikan Pola Pikir
-											Siswa
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										4
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul IV</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Sistem Asesmen yang Tepat & Selaras Kebutuhan Murid
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										5
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul V</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Praktik Nyata Pembelajaran Mendalam di Kelas
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-start gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm shrink-0 z-10 shadow-md"
-									>
-										6
-									</div>
-									<div
-										class="bg-white border border-gray-200 rounded-lg p-4 w-full hover:shadow-md transition-shadow"
-									>
-										<span
-											class="text-xs font-bold text-blue-600 uppercase tracking-wide"
-											>Modul VI</span
-										>
-										<h4 class="font-bold text-gray-800 mt-1">
-											Integrasi Teaching Review & Grading untuk Perbaikan
-											Berkelanjutan
-										</h4>
-									</div>
-								</div>
-
-								<div class="flex items-center gap-4">
-									<div
-										class="w-8 h-8 rounded-full bg-red-100 border-2 border-red-500 flex items-center justify-center shrink-0 z-10"
-									>
-										<i
-											data-feather="check-square"
-											class="w-3 h-3 text-red-600"
-										></i>
-									</div>
-									<div
-										class="bg-red-50 border border-red-200 rounded-lg p-3 w-full"
-									>
-										<span class="font-bold text-red-700 text-sm"
-											>🏁 Post-Test</span
-										>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div
-							class="w-full lg:w-1/3 bg-gray-50 border-l border-gray-200 p-6 lg:p-8 flex flex-col"
-						>
-							<div class="sticky top-0">
-								<h3
-									class="text-xl font-bold text-gray-800 flex items-center gap-2 mb-6"
-								>
-									<i data-feather="gift" class="w-5 h-5 text-purple-600"></i>
-									Benefit Program
-								</h3>
-
-								<div class="grid grid-cols-1 gap-3">
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">📘</span>
-										<span class="font-medium text-gray-700"
-											>Akses Modul Lengkap</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">🍪</span>
-										<span class="font-medium text-gray-700"
-											>Snack (3 Hari)</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">🍱</span>
-										<span class="font-medium text-gray-700"
-											>Makan Siang (3 Hari)</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">🧩</span>
-										<span class="font-medium text-gray-700"
-											>Coaching Clinic</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">📑</span>
-										<span class="font-medium text-gray-700"
-											>File PPT / Materi</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm"
-									>
-										<span class="text-2xl">📸</span>
-										<span class="font-medium text-gray-700"
-											>Dokumentasi & Press Release</span
-										>
-									</div>
-
-									<div
-										class="flex items-center gap-3 p-3 bg-white rounded-lg border shadow-sm ring-2 ring-purple-100"
-									>
-										<span class="text-2xl">🎓</span>
-										<span class="font-medium text-gray-700"
-											>Sertifikat Resmi</span
-										>
-									</div>
-								</div>
-
-								<div class="mt-8 pt-6 border-t border-gray-200">
-									<a
-										href="https://bit.ly/daftarPMbyHAFECS"
-										target="_blank"
-										rel="noopener noreferrer"
-									>
-										<button
-											class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-bold py-3 rounded-lg shadow-lg hover:opacity-90 transition-opacity flex justify-center items-center gap-2"
-										>
-											Daftar Sekarang
-											<i data-feather="arrow-right" class="w-4 h-4"></i>
-										</button>
-									</a>
-
-									<p class="text-xs text-center text-gray-500 mt-2">
-										Kuota terbatas untuk setiap batch
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
 
 		<script>
 			feather.replace();
